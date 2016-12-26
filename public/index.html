@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Welcome to Translate Together</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+  </head>
+  <body>
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-5 col-sm-6"><h2 class="section-heading">ENGLISH</h2> 
+        <div id="content"></div>
+      </div>
+
+      <div class="col-lg-5 col-lg-offset-2 col-sm-6" ><h2 class="section-heading">KOREAN</h2>
+        <div id="translatedContent"></div>
+      </div>  
+      
+    </div>  
+  </section>
+
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
+      authDomain: "canadaforum-18020.firebaseapp.com",
+      databaseURL: "https://canadaforum-18020.firebaseio.com",
+      storageBucket: "canadaforum-18020.appspot.com",
+      messagingSenderId: "496860594601"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src ="scripts/app.js"></script>
+  </body>
+</html>

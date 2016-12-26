@@ -1,0 +1,20 @@
+{
+  "ExpressEntry" : {
+    "home" : {
+      "link" : "http://www.cic.gc.ca/english/express-entry/",
+      "paragraph" : "How Express Entry works Note: We are updating the Express Entry system:  you can now earn additional points for study in Canada a valid job offer now only needs to be for one year, and some job offers no longer need an LMIA the amount of points you get for a job offer has changed you now have 90 days to apply instead of 60. Find out more about these changes and how they may affect you.  Express Entry is used to manage applications for permanent residence under these federal economic immigration programs:  the Federal Skilled Worker Program, the Federal Skilled Trades Program, and the Canadian Experience Class. Provinces and territories can also recruit candidates from the Express Entry system through their Provincial Nominee Programs to meet local labour market needs.  Ministerial Instructions set out the rules for governing the Express Entry application management system.  The Express Entry system has two steps:  Step 1) Potential candidates complete an online Express Entry profile Potential candidates will complete an online Express Entry profile. This is a secure form that they will use to provide information about their:  skills, work experience, language ability, education, and other details that will help us assess them. Those who meet the criteria of one of the federal immigration programs listed above will be accepted into a pool of candidates.  Anyone who does not already have a job offer supported by a Labour Market Impact Assessment (LMIA) (if you need one), or a nomination from a province or territory, must register with Employment and Social Development Canada’s (ESDC) Job Bank. Job Bank will help connect Express Entry candidates with eligible employers in Canada.  Candidates are also encouraged to promote themselves to employers in other ways, such as using job boards, recruiters etc.  For a job offer to be valid in Express Entry and receive points, employers will usually need an LMIA from ESDC (there are a few exceptions).  There is no LMIA fee for permanent resident applications.  Note: If you meet the entry criteria for the Express Entry pool, you are not guaranteed an invitation to apply for permanent residence. All applicants for permanent residence also need to meet eligibility and admissibility requirements under Canada’s immigration law (Immigration and Refugee Protection Act). Step 2) The highest-ranking candidates in the pool will be invited to apply for permanent residence  Candidates will be ranked against others in the pool using a point-based system called the Comprehensive Ranking System. Points are awarded using the information in their profile.  Candidates with the highest scores in the pool will be issued an invitation to apply. Candidates will be awarded points for:  a job offer, and/or a nomination from a province or territory, and/or skills and experience factors. A candidate can get additional points for:  qualifying education in Canada a valid job offer or a nomination by a province or territory These additional points can make a candidate rank high enough to be invited to apply at the next eligible round of invitations.  If someone is invited to apply, they will have 90 days to submit an online application for permanent residence.  Citizenship and Immigration Canada will process the majority of complete applications (meaning those with all the necessary supporting documents) in six months or less.  Candidates can stay in the pool for up to 12 months. If they do not get an invitation to apply for permanent residence within 12 months of submitting an Express Entry profile, they may submit a new profile. If they still meet the criteria, they can re-enter the pool. This will prevent backlogs and ensure quick processing times.",
+      "translation" : {
+        "para0" : "안녕 para0",
+        "para1" : "d안ㄴ녕 para1"
+      }
+    }
+  },
+  "translate" : {
+    "-KZY70mH3HZYXMmY2Rmj" : {
+      "text" : "안녕"
+    },
+    "-KZYSSh_nLQA6uhtmZPz" : {
+      "text" : "HA!"
+    }
+  }
+}
