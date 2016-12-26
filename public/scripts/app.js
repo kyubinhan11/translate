@@ -14,54 +14,46 @@ TranslateTogether.prototype.initApp = function() {
 	this.databaseRef = this.database.ref();
 
 };
-TranslateTogether.oldparagraphTemplate = 
-	'<div class="row">' +			
-		'<div class="col-lg-5 col-sm-6 highlighted">' +			
-			'<p class="english"></p> </div>' +	
-		'<div class="col-lg-5 col-lg-offset-2 col-sm-6" >' +
-		'<p class="translated"></p></div>' +					      
-	'</div>'+
-	'<br><br>';
+// TranslateTogether.oldparagraphTemplate = 
+// 	'<div class="row">' +			
+// 		'<div class="col-lg-5 col-sm-6 highlighted">' +			
+// 			'<p class="english"></p> </div>' +	
+// 		'<div class="col-lg-5 col-lg-offset-2 col-sm-6" >' +
+// 		'<p class="translated"></p></div>' +					      
+// 	'</div>'+
+// 	'<br><br>';
 
 TranslateTogether.paragraphTemplate = 
-				
-	'<div class="highlighted">' +			
-		'<p class="english"></p>' + 
+	'<div class="row highlighted">' +			
+		'<div class="col-lg-5 col-sm-6">' +			
+			'<p class="english"></p> </div>' +	
+		'<div class="col-lg-5 col-lg-offset-2 col-sm-6 " >' +
+		'<p class="korean"></p></div>'+					      
 	'</div>';
-							      
-TranslateTogether.translatedTemplate =
 	
-	'<div>' +			
-		'<p class="translated"></p>' + 
-	'</div>';
+		
+
+
 
 TranslateTogether.prototype.displayContents = function(){
-	const ExpressEntryHomeParagraph = this.databaseRef.child('ExpressEntry').child('home').child('paragraph');	
-	const ExpressEntryHomeTranslation = this.databaseRef.child('ExpressEntry').child('home').child('translation');
+	const ExpressEntryHomeParagraph = this.databaseRef.child('ExpressEntry').child('home').child('paragraphs');	
 	
     //console.log(container);
     
     ExpressEntryHomeParagraph.on('child_added', snap => {
-    	//console.log(snap.val()); 
+    	var value = snap.val();
     	var container = document.createElement('div');   	
     	container.innerHTML = TranslateTogether.paragraphTemplate;
    		var div = container.firstChild;
    		div.id = snap.key;
    		document.getElementById('content').appendChild(div);
 	    var englishElement = div.querySelector('.english');
-	    englishElement.innerHTML = snap.val();
-	        	
+	    englishElement.innerHTML = value['english'];
+	    var translatedElement = div.querySelector('.korean');
+	    translatedElement.innerHTML = value['korean'];     	
     });
 
-    ExpressEntryHomeTranslation.on('child_added', snap =>{
-    	var container1 = document.createElement('div');
-    	container1.innerHTML = TranslateTogether.translatedTemplate;
-    	var div1 = container1.firstChild;
-    	div1.id = snap.key;
-    	document.getElementById('translatedContent').appendChild(div1);
-    	var translatedElement = div1.querySelector('.translated');
-	    translatedElement.textContent = snap.val(); 
-    });
+    
 };
 
 
