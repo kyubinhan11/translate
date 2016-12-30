@@ -2,35 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Welcome to Translate Together</title>
+    <title>Translate Together</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular-sanitize.js"></script>
+
+    <script src="scripts/app.js"></script>
+
   </head>
-  <body>
-  <section class="container">
-    <div class="row">
-      <div class="col-lg-5 col-sm-6"><h2 class="section-heading">ENGLISH</h2> </div> 
-      <div class="col-lg-5 col-lg-offset-2 col-sm-6" ><h2 class="section-heading">KOREAN</h2></div> 
-    </div>
+  <body ng-app="mainApp" ng-controller="mainCtrl">
+    <section class="container">
+      <p>
+        Sort by:
+        <select ng-model="orderBy">
+          <option>from</option>
+          <option>content</option>
+          <option>timestamp</option>
+        </select>
+      </p>
 
-    <div id="content"></div>
+      <div class="row">      
+          <div class="col-lg-5 col-sm-6"><h2 class="section-heading">ENGLISH</h2></div> 
+          <div class="col-lg-5 col-lg-offset-2 col-sm-6" ><h2 class="section-heading">KOREAN</h2></div>
 
-  </section>
+          <!-- <pre>{{mainParagraphs | json}}</pre> -->
+      </div>
 
 
-  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
-      authDomain: "canadaforum-18020.firebaseapp.com",
-      databaseURL: "https://canadaforum-18020.firebaseio.com",
-      storageBucket: "canadaforum-18020.appspot.com",
-      messagingSenderId: "496860594601"
-    };
-    firebase.initializeApp(config);
-  </script>
-  <script src ="scripts/app.js"></script>
+      <div ng-repeat="paragraph in mainParagraphs">
+        <div id="paragraph{{$index+1}}" class="row highlighted">
+            <div class="col-lg-5 col-sm-6" ng-bind-html="paragraph.english"></div>           
+
+            
+            <div ng-repeat="translation in translations | orderBy:orderBy : true" class="col-lg-5 col-lg-offset-2 col-sm-6">
+              
+                {{translation.from}} <br> {{translation.content}} <br>
+                <!-- delete a message using $remove -->
+                <a href="" ng-click="translations.$remove(translation)">X</a>
+
+            </div><!--end of ng-repeat of translations -->  
+            
+
+        </div><br>    
+      </div><!--end of ng-repeat of mainParagraphs -->  
+
+    </section>
+
+    <form ng-submit="addTranslation()">
+        <!-- <input type="text" ng-model="translation"> -->
+        <textarea class="form-control" rows="10" ng-model="translation"></textarea>
+        <button type="submit">Save</button>
+    </form>
+    
+
   </body>
 </html>
