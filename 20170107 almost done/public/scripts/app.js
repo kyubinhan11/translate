@@ -88,7 +88,7 @@
 		service.getArrayofTranslations = function(){
 			var array = [];
 			var ref, query;
-			// para01, para02, ''' para10, para11,
+			// para01, para02, ''' para10, para11, 
 			for (var index = 1; index< 1 + numOfPara; index++){
 				if(index < 10){
 					ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph0" + index + "/"+ language);
@@ -178,7 +178,7 @@
 													userUid: mainCtrl.firebaseUser.uid,
 													// each paragraphs get assigned different textareas and content
 													// by having index, content will be added in the right firebaseArray
-													content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
+													content: mainCtrl.content[index].replace(/\n/g, '<br>').replace(/ /g,'&nbsp'),
 													timestamp: firebase.database.ServerValue.TIMESTAMP
 												});
 
@@ -196,7 +196,7 @@
 											// each paragraphs get assigned different textareas and content
 											// by having index, content will be added in the right firebaseArray
 											userUid: mainCtrl.firebaseUser.uid,
-											content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
+											content: mainCtrl.content[index].replace(/\n/g, '<br>').replace(/ /g,'&nbsp'),
 											timestamp: firebase.database.ServerValue.TIMESTAMP
 										});
 
@@ -365,7 +365,6 @@
 				controller.bannedUsers = data;
 		})
 
-		// for title in HTML
 		controller.title = service.getTitle();
 	};
 

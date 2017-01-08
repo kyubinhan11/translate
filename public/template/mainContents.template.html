@@ -1,0 +1,106 @@
+<dir-nav></dir-nav>
+
+<article class="container" style="padding-top: 70px;">
+  <section class="row">
+    <!-- <a ui-sref="threeParameters({category: mainCtrl.arrayOfPath[0], para1: 'Home', numOfPara: 8})"> {{mainCtrl.arrayOfPath[0]}} </a> > <span>{{mainCtrl.path}}</span> -->
+    <p class="section-heading">{{mainCtrl.path}}</p>
+    <h2 class="section-heading col-md-8">{{mainCtrl.title}}</h2>
+    <h2 class="section-heading col-md-4">Language : Korean</h2>
+    <!-- "ui-sref="threeParameters({category:'ExpressEntry', para1:'Home', numOfPara: 8})" -->
+    <!-- <div class="col-md-6" ><h3 class="section-heading">TRANSLATION</h3></div> -->
+
+  </section>
+
+  <!-- translationss is an array of firebaseArray -->
+  <section id="first-ng-repeat" ng-repeat="paragraph in mainCtrl.paragraphs" ng-init="translations = mainCtrl.ArrayOfTranslations[$index]">
+    <div class="row highlighted">
+
+      <!-- ENGLISH PARAGRAPHS -->
+      <div class="col-md-6">
+        <div ng-bind-html="paragraph.english"></div>
+        <!--ng-show="mainCtrl.firebaseUser"-->
+        <button class="btn btn-primary" ng-hide="mainCtrl.showText[$index]" ng-click="mainCtrl.showText[$index]=true; mainCtrl.createUserIpaddress();">
+          Translate! </button>
+      </div>
+      <!-- end of left side -->
+
+      <br>
+      <!-- ALL TRANSLATIONS FOR EACH PARAGRAPHS (remove limitTo filter)-->
+      <!-- JUST ONE LATEAST TRANSLATION FOR EACH PARAGRAPHS just add limitTo:'1' -->
+      <!-- translations is a FirebaseArray -->
+      <div ng-hide="mainCtrl.showText[$index]" class="col-md-6">
+
+        <div id="second-ng-repeat" ng-repeat="translation in translations | orderBy:mainCtrl.orderBy:true | startFrom: mainCtrl.currentPage[$index] | limitTo:mainCtrl.pageSize" >
+          Thanks! {{translation.user}} &nbsp;&nbsp; Date: {{mainCtrl.convertTimestamp(translation.timestamp);}} <br>
+          <div ng-bind-html="translation.content"></div><br>
+
+          <button ng-if="mainCtrl.firebaseUser.uid==mainCtrl.adminId" class="btn btn-warning" ng-click="mainCtrl.removeTranslation(translations, translation);">delete</button> &nbsp;
+
+          <button ng-if="mainCtrl.firebaseUser.uid==mainCtrl.adminId" class="btn btn-warning" ng-click="mainCtrl.banTranslation(translations, translation)">ban this user</button>
+
+          <button style="float: right;" class="btn btn-danger btn-sm" ng-click="mainCtrl.claimFaultyTranslation(translations, translation, mainCtrl.firebaseUser.uid)" > <span class="glyphicon glyphicon-flag"></span>&nbsp;Report {{translation.faultyCount}}</button> &nbsp;
+
+        </div>
+        <!-- end of each second ng-repeat -->
+
+
+        <!-- two buttons for pagination -->
+        <br>
+        <div align="center">
+          <button class="btn btn-link" ng-disabled="mainCtrl.currentPage[$index] == 0" ng-click="mainCtrl.currentPage[$index] = mainCtrl.currentPage[$index] - 1">
+              <
+          </button>
+          {{mainCtrl.currentPage[$index] + 1}} / {{mainCtrl.theNumberOfEachTranslations[$index]}}
+          <button class="btn btn-link" ng-disabled="mainCtrl.currentPage[$index] >= mainCtrl.theNumberOfEachTranslations[$index] - 1" ng-click="mainCtrl.currentPage[$index] = mainCtrl.currentPage[$index] + 1">
+              >
+          </button>
+
+          <p ng-if="mainCtrl.firebaseUser.uid==mainCtrl.adminId">
+            Sort by:
+            <select ng-model="mainCtrl.orderBy">
+              <option>user</option>
+              <option>content</option>
+              <option>timestamp</option>
+              <option>faultyCount</option>
+            </select>
+          </p>
+        </div>
+
+      </div>
+      <!-- end of translations -->
+
+      <!-- TEXTAREA -->
+      <!-- showText[$index] helps to track down the paragraph that user is interested in  -->
+      <div ng-show="mainCtrl.showText[$index]" class="col-md-6">
+        <form ng-submit="mainCtrl.addTranslation(translations, $index)">
+          <textarea class="form-control" rows="10" ng-model="mainCtrl.content[$index]"></textarea><br>
+          <p>To protect contents from being edited or vandalized by others, <br>your IP address({{mainCtrl.userIpaddress}}) will be recorded permanently in the history.</p>
+          <button class="btn btn-success" type="submit" ng-click="mainCtrl.reload(); mainCtrl.showText[$index]=false;">Save</button> &nbsp;&nbsp;
+
+          <!-- <button class="btn btn-success" type="submit" ng-click="mainCtrl.showText[$index]=false;">Save</button> &nbsp;&nbsp; -->
+
+
+          <a href="" class="" ng-click="mainCtrl.showText[$index]=false">cancel</a>
+
+
+        </form>
+
+      </div>
+
+      <!-- end of right side -->
+
+    </div>
+    <!-- end of each rows -->
+
+
+
+    <br><br>
+
+  </section>
+  <!-- end of the first ng-repeat -->
+
+  <p>source : <a href="{{mainCtrl.link.$value}}">{{mainCtrl.link.$value}}</a></p>
+
+  <br><br><br><br>
+  <p style="color:gray">2016-2017 KYUBIN HAN ALL RIGHTS RESERVED.</p>
+</article>

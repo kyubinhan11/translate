@@ -1,0 +1,17 @@
+
+FEATURES.
+it is built with real-time database from Firebase
+it has AUTHENTIFICATION with Twitter, Facebook, Google Auth
+it is built with AngularJS for binding javascript and html with a couple of nice features such as ui-router
+it can report faulty translation and if it reaches a certain number the user will be banned
+users can navigate individual translations attached to its paragraph using pagination
+administer can delete translations or ban users right away with buttons on the webpage
+
+SETTINGS.
+It will reload everytime users save translations or admin delete translations
+users can only write after logging in
+due to the characteristic of database paragraphs that have more than 10 are in weird order ex) 1, 11, 12, 2, 3, ...
+  and therefore the translations are also attached to the paragraphs in weird order -> user won't notice though....shit!!
+
+TODO
+user history
