@@ -1,0 +1,1433 @@
+{
+  "ExpressEntry" : {
+    "After_you_apply" : {
+      "link" : "http://www.cic.gc.ca/english/immigrate/skilled/next_steps.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>   <h2 id=\"cn-cont\">After you apply – Skilled immigrants (Express Entry)</h2> </header>   <section class=\"alert alert-info\"> <p>Is your Express Entry profile about to expire?&nbsp;Express Entry profiles are valid for one year. See how you can <a href=\"/english/immigrate/skilled/no-invite.asp\">re-create a profile</a> once yours has expired.</p> </section>   <p>Once you send your application, there are a few things you can expect.</p>",
+          "korean" : {
+            "-K_ubnFxSsZifXjjyiqv" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971145,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<h2>How we assess your application</h2>   <p>After you apply, we will verify that you have:</p>   <ul>     <li>filled out your online application for permanent residence correctly,</li>     <li>paid your processing fee,</li>     <li>met all the requirements,</li>     <li>included all documents.</li>   </ul>   <p>If you are not truthful in your Express Entry profile or application for permanent residence:</p>   <ul>     <li>your application could be refused,</li>     <li>you could be found inadmissible, and</li>     <li>you could be barred for five years from applying to come to Canada for any reason.</li>   </ul>   <p>We will contact you through <a href=\"/english/e-services/account.asp\">your account</a> when we have reviewed your application. You can get updates on the status of your application through your account. We will tell you what you need to do and what will happen next.</p>",
+          "korean" : {
+            "-K_ubnFyXRi56wRrfXXa" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971151,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h2>Processing times</h2>   <p>We expect to process most applications for permanent residence through the Express Entry system in six months or less, after we get a complete application.</p>   <p>You may be able to avoid delays by updating your account if there are any changes to your personal information, such as your address, telephone number or email, or if there are changes to your family structure.</p>",
+          "korean" : {
+            "-K_ubnG-xn35I-wet7OV" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971152,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<p>Your application may be delayed if:</p>   <ul>     <li>there are criminal or security problems,</li>     <li>we need to do more background checks,</li>     <li>your family situation is not clear – reasons could include a divorce or an adoption that is not yet complete, or child custody issues that have not been resolved,</li>     <li>we need to verify information, or</li>     <li>you need to submit more documents or go to an interview with us.</li>   </ul>",
+          "korean" : {
+            "-K_ubnG0xHUz_6-1iHKS" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971155,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<p>You can <a href=\"/english/e-services/account.asp\">check the status of your application online</a> using your account.</p>   <ul>     <li>Login to your account.</li>     <li>Once on the “Welcome” page, scroll to the bottom.</li>     <li>Under “View my submitted applications or profiles,” there is a table.</li>     <li>Under “Application type” it will say “Express Entry.” Choose the “Check status and messages” button.</li>   </ul>   <p>The “Application Details” table shows the status of each stage.</p>",
+          "korean" : {
+            "-K_ubnG4V6r0-a6HP8HP" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971156,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<h2>Decision on your application</h2>   <p>The officer will make a decision on your application based on if you:</p>   <ul>     <li>meet the eligibility criteria for the program, and</li>     <li>are admissible to Canada (based on the results of your medical exam, police certificates, background checks, etc.).</li>   </ul>   <p>We will contact you through <a href=\"/english/e-services/account.asp\">your account</a> if you need to send more documents or go to an interview.</p>   <p>If we approve your application, we will issue your Confirmation of Permanent Residence and/or permanent resident visa. If you have not already paid your Right of Permanent Residence fees, you should do this now.</p>",
+          "korean" : {
+            "-K_ubnG5kuim_QNOdw9I" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971157,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<h3>If you are currently working in Canada</h3>   <p>If your existing work permit is about to expire, you may be eligible for a <a href=\"/english/work/permit/extend/permanent.asp\">bridging open work permit</a>. If you are eligible, this permit can let you keep working while you wait for a final decision on your permanent residence application.</p> \t<h2>Confirmation of permanent residence</h2>   <p>If we approve your application, we will issue you a Confirmation of Permanent Residence (COPR) and, if you are from a country that requires visas, a permanent resident visa.</p>",
+          "korean" : {
+            "-K_ubnG6mV0M7VB7l-my" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971157,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<p>Your COPR will have information about who you are, as well as your photograph. Please check to make sure it is all correct. It should be the same as the information on your passport. If there is a mistake on your COPR, contact us through your account.</p>   <p>If you are arriving from outside Canada, be sure to follow the instructions in the letter that came with your immigration document(s).You must have your COPR and your visa (if you need one) with you when you arrive in Canada.</p>",
+          "korean" : {
+            "-K_ubnG6mV0M7VB7l-mz" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971158,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph09" : {
+          "english" : "<h2>Get ready to settle in Canada</h2>   <p>There are things you can do to help you prepare for life in Canada.</p>   <h3>Before you arrive in Canada</h3>   <ul>     <li>Use <a href=\"/english/newcomers/before-services.asp\">free pre-arrival services</a>. These services can help you find out more about living and working in Canada. They can also help you take steps to get your education, work experience and professional licences/certificates recognized in Canada.</li>     <li>Read about <a href=\"/english/newcomers/live/index.asp\">living and finding work in Canada</a>.</li>   </ul>",
+          "korean" : {
+            "-K_ubnG7RkwVI84YVbZY" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971159,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph10" : {
+          "english" : "<h3>After you arrive in Canada</h3>   <ul>     <li>Find <a href=\"/english/newcomers/map/services.asp\">immigrant services in Canada</a>. They can help you settle and adapt to life when you arrive in Canada.</li>     <li>Read the <a href=\"/english/resources/publications/welcome/index.asp\">Welcome to Canada</a>&nbsp;guide, a booklet we created to help you adjust.</li>     <li>Use the <a href=\"/lctvac/english/index\">Living in Canada</a> tool, a simple tool that will help you find the right services.</li>   </ul>",
+          "korean" : {
+            "-K_ubnG7RkwVI84YVbZZ" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820971159,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Become_a_candidate" : {
+      "How_the_pool_works" : {
+        "link" : "http://www.cic.gc.ca/english/immigrate/skilled/pool.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "<header>   <h2 id=\"cn-cont\">Once you are in the pool – Skilled immigrants (Express Entry)</h2> </header> <!-- Content Title ends / Fin du titre du contenu --> <!-- Content begins / Début du contenue -->    <p>Note: You now have 90 days to finish your online application for permanent residence once you are invited to apply. Find out  more about the recent <a href=\"/english/department/media/notices/2016-11-19.asp\">changes to Express Entry</a>.</p>    <p>If you create an Express Entry profile and we find you eligible, you will be put into the Express Entry pool of candidates.</p>",
+            "korean" : {
+              "-K_w2L6W__rFivT1aP_t" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844968998,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<p>You will be in the pool for <strong>one year</strong> from the day you get in.   </p>     <p>You will get a personal reference code to use to create a Job Match account in <a href=\"http://www.jobbank.gc.ca/home-eng.do?lang=eng\">Job Bank</a>.       <ul>         <li>If you do not have a job offer or a nomination from a province or territory you must create a Job Match account to be eligible for the pool. </li>         <li class=\"list-bullet-none\">To do so:         <ul>             <li>go to the <a href=\"https://seeker.jobbank.gc.ca/seeker/login.xhtml\">Job Match sign-in page</a></li>             <li>click the “Sign up now!” button</li>             <li>read the privacy notice and click “I agree”</li>             <li>follow the instructions to create an account.</li>         </ul>       </ul>      </p>",
+            "korean" : {
+              "-K_w2L6c1I6e_ktg6Ipg" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844968999,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<p>You will receive a points score based on the information you provided in your profile.       <ul>         <li>Candidates will be ranked using the <a href=\"/english/express-entry/criteria-crs.asp\">Comprehensive Ranking System</a>, which is based on factors that have been shown to help immigrants prosper in Canada. </li>       </ul>     </p>     <p>There will be <a href=\"/english/express-entry/draws.asp\">regular rounds</a> to invite top candidates to apply for permanent residence.       <ul>         <li>You <strong>must</strong> have an <a href=\"/english/immigrate/skilled/invitations.asp\">Invitation to Apply</a> before you can apply online for permanent residence. </li>         <li>You may be invited to apply if you are among the top ranked in the pool based on your skills and experience.</li>       </ul>     </p>",
+            "korean" : {
+              "-K_w2L6haZOmTwT3p0Pt" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969006,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<p>If you are invited to apply for permanent residence, we will send a message to your <strong>account</strong> and to your personal email address, so make sure that you provide a valid email address</p>     <p>You must make sure that the information in your profile stays true and accurate at all times.       <ul>         <li>If your situation changes (for example, if you start a new career, you get a new language test, get married, or have a new baby), you must update your profile. </li>       </ul>     </p>",
+            "korean" : {
+              "-K_w2L6o8tNm3ru1GKdU" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969013,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<p>If you do not get invited to apply for permanent residence after a year of being in the pool, your Express Entry profile will expire.</p> \t<ul>     <li>If you still want to come to Canada as a skilled immigrant, you will need to complete and submit a new profile. </li>     <li>If you meet minimum entry criteria, you will receive a new <a href=\"/english/immigrate/skilled/instruction-guide.asp#profile_number\">Express Entry Profile Number</a>.</li>   </ul>",
+            "korean" : {
+              "-K_w2L6uJfMg0R4cLlJ7" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969019,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<h2>Get your application for permanent residence ready</h2>    <p>If we invite  you to apply, you will have 90 days to fill out and submit your application. Some documents (for example, police certificates) may take longer than 90 days to get. You should start applying for these documents right away, so that you  have them ready and can apply within the 90-day time limit.</p>",
+            "korean" : {
+              "-K_w2L6wxz7zXyX4Ox5n" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969020,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph07" : {
+            "english" : "<h2 id=\"improve\">Try to improve your score</h2>   <p>There are things that you can do to improve your score and increase your chances of being invited to apply. For example, you may want to:</p>   <ul>     <li>secure a <a href=\"/english/immigrate/skilled/offer.asp\">valid job offer</a> using:       <ul>         <li>Job Bank, or </li>         <li>by promoting yourself to employers in Canada using private sector job boards,</li>       </ul>     </li>     <li>contact provinces and territories to be considered in a Provincial Nominee Program,</li>     <li>improve your <a href=\"/english/immigrate/skilled/language-testing.asp\">language score</a>,</li>     <li>improve your education, or</li>     <li>gain more relevant work experience.</li>   </ul>",
+            "korean" : {
+              "-K_w2L7275rl-NftiaeU" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969027,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph08" : {
+            "english" : "<h2 id=\"profile\">Be sure that your profile is fully up-to-date and accurate.</h2>   <p> If we invite you to apply, you will be responsible for any information in your profile and application for permanent residence. </p>   <p> If we find that you misrepresented yourself (gave us false information or left out important details), we will refuse your application. In that case:</p>   <ul>     <li>your application could be refused,</li>     <li>you could be found inadmissible, and</li>     <li>you could be barred for five years from applying to come to Canada for any reason.</li>   </ul>",
+            "korean" : {
+              "-K_w2L762LOYKyBGLliH" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483844969033,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "Invitations_to_apply" : {
+        "link" : "http://www.cic.gc.ca/english/immigrate/skilled/invitations.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "<header>   <h2 id=\"cn-cont\">Invitations to apply – Skilled immigrants (Express Entry)</h2> </header>  <section>   <p>Note: You now have 90 days to finish your online application for permanent residence once you are invited to apply. Find out  more about the recent <a href=\"/english/department/media/notices/2016-11-19.asp\">changes to  Express Entry</a>.</p>  <p>If you are invited to apply for permanent residence, you will need to show proof of the information you gave us in your <a href=\"/english/immigrate/skilled/profile.asp\">Express Entry profile</a>. We will refuse your application if the information in your profile is different from what you submitted in your application. </p>",
+            "korean" : {
+              "-K_ubmla66YOm0ZquzEP" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969140,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<p>If we invite you to apply, you will get a message in your account telling you: </p>   <ul>     <li>which program you are invited under, and </li>     <li>what to do next.</li>   </ul>   <p>If we find that you misrepresented yourself (gave us false information or left out important details), we will refuse your application. In that case:</p>   <ul>     <li>your application could be refused,</li>     <li>you could be found inadmissible, and</li>     <li>you could be barred for five years from applying to come to Canada for any reason.</li>   </ul>",
+            "korean" : {
+              "-K_ubmlbmwLeUEcXAamB" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969141,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<h2>Documents to support your application for permanent residence</h2>    <p>You should start to get your documents ready as soon as you are accepted into the <a href=\"/english/immigrate/skilled/pool.asp\">Express Entry pool</a>. </p>    <p>If we invite you to apply, you will have 90 days to fill out your application for permanent residence and submit all supporting documents. Having your documents ready will make it easier to apply within the 90 days.</p>",
+            "korean" : {
+              "-K_ubmlcvTSaH_Gyt6-I" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969142,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<h3>Language tests </h3>   <p>Check that your <a href=\"/english/immigrate/skilled/language-testing.asp\">language test results</a> will still be valid on the date you plan to apply for permanent residence. If your results expire before then, you should: </p>   <ul>     <li>be tested again, </li>     <li>apply before your test results expire, or</li>     <li>decline the invitation and go back into the pool to be considered in the future. </li>   </ul>   <p>If you apply for permanent residence with language test results that have expired, we will refuse your application.</p>",
+            "korean" : {
+              "-K_ubmldXj2VztET0ev4" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969143,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<h3>Police certificates </h3>   <p>You will need to get <a href=\"/english/information/security/index.asp\">police certificates</a> for you and each of your family members who are over&nbsp;18. You must get one from each country or territory where you have spent six or more  months since the age of&nbsp;18.</p>   <p>For countries where you  have lived for six months or more, the police certificate must be issued after the last time you lived in that country.</p>    <p>In some countries, it can take a long time to get police certificates. If you did not start the process to get them before you were invited to apply, you should do this right away, so you can submit them before the 90&nbsp;days are up.</p>",
+            "korean" : {
+              "-K_ubmldXj2VztET0ev5" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969144,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<h2>Program requirements</h2>   <p>You can <a href=\"/english/immigrate/skilled/apply-who-express.asp\">check the criteria for the program you have been directed to apply under</a> to see if you are still eligible.</p>   <p>By understanding your program requirements, you will be more prepared to apply to Citizenship and Immigration Canada. It will also help you decide whether or not to accept an invitation to apply if you are issued one.</p>",
+            "korean" : {
+              "-K_ubmlefTnNB5sY3pVH" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969145,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph07" : {
+            "english" : "<h2>Changes to your personal situation</h2>   <p>If your situation (or that of your spouse or partner) changes, you should <a href=\"/english/immigrate/skilled/crs-tool.asp\">re-calculate your score</a> before applying online for permanent residence.</p>   <p>If your recalculated score is less than the <a href=\"/english/express-entry/rounds.asp\">lowest score in your round of invitations</a> for an invitation to apply, you should decline the invitation.</p>",
+            "korean" : {
+              "-K_ubmlfpc41-28CT3aQ" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969145,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph08" : {
+            "english" : "<p><strong>Warning:</strong> In this case, if you decide to apply, we may refuse your application and will not refund your application fee.</p>   <p>Some examples of changes which could lower your score:</p>   <ul>     <li>you no longer have a <a href=\"/english/immigrate/skilled/offer.asp\">valid job offer</a></li>     <li>you no longer have a provincial nomination</li>     <li>your language test scores have expired, or you re-took them and they are lower </li>   </ul>   <p>Find out how to <a href=\"/english/immigrate/skilled/crs-tool.asp\">re-calculate your score</a>.</p>",
+            "korean" : {
+              "-K_ubmlfpc41-28CT3aR" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969147,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph09" : {
+            "english" : "<h2>Declining an invitation to apply</h2>   <p>If you decline an invitation, you will be put back into the Express Entry pool of candidates (as long as you still meet the minimum criteria) to be considered in future rounds of invitations.</p>   <p>You may have to take steps to be considered again for the pool. For example, if you got additional points for a job offer but the job is no longer available to you, you may need to get another job offer. Or, if you got married or entered into a common-law relationship, you will have to update your Express Entry profile.</p>",
+            "korean" : {
+              "-K_ubmlfpc41-28CT3aS" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969148,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph10" : {
+            "english" : "<p>There is no guarantee that you will be invited to apply again. But, if you choose to re-enter the pool, declining an invitation <strong>will not</strong> have a negative effect on whether or not you could be invited to apply later. </p>    <p>If you <strong>do not</strong> decline an invitation and you <strong>do not apply within 90 days</strong>, the invitation will expire. You will have to complete and submit a new Express Entry profile <strong>and</strong> be accepted to the pool again to be considered in future rounds of invitations. </p>    <p>To re-enter the pool, you must complete a new profile and meet the minimum criteria.</p>",
+            "korean" : {
+              "-K_ubmlgCSBcaWiUWLSn" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969149,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph11" : {
+            "english" : "<h2>If you are not invited to apply</h2>   <p>You can only stay in the Express Entry pool for one year from the date you were accepted into it. You can see this date in <a href=\"/english/e-services/account.asp\">your account</a>.</p>   <p>Your Express Entry profile will expire if you are not invited to apply in those 12&nbsp;months. If it expires, you will get a message in your account telling you so. </p>   <p>Find out what you should do <a href=\"/english/immigrate/skilled/no-invite.asp\">if you are not invited to apply</a> and your profile expires.</p>",
+            "korean" : {
+              "-K_ubmlgCSBcaWiUWLSo" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820969149,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "Rounds_of_invitations" : {
+        "link" : "http://www.cic.gc.ca/english/express-entry/rounds.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "<header>   <h2 id=\"cn-cont\">Express Entry rounds of invitations</h2> </header>  <section>   <p>Under Express Entry, candidates who <a href=\"/english/express-entry/criteria-crs.asp\">meet the criteria</a> will be accepted into a pool of possible candidates for immigration to Canada.</p>   <p>Candidates will be ranked against others in the pool using a point-based system called the&nbsp;<a href=\"/english/express-entry/criteria-crs.asp\">Comprehensive Ranking System</a>. Citizenship and Immigration Canada (CIC) will regularly select the highest-ranking candidates from the pool by inviting them to apply to immigrate to Canada as permanent residents.</p>",
+            "korean" : {
+              "-K_ubmNsQNK9Ae1ufBe8" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967557,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<div class=\"alert alert-info\">     <p><strong>Note:</strong> Entry into the Express Entry pool does not guarantee a candidate will be issued an Invitation to Apply (ITA) for permanent residence. Invited candidates still have to meet eligibility and admissibility requirements under Canada&rsquo;s immigration law (<em>Immigration and Refugee Protection Act</em>).</p>   </div>",
+            "korean" : {
+              "-K_ubmNtCiN3xsiKMHi0" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967558,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<p>CIC will invite candidates from the Express Entry pool to apply on a regular basis. Every round of invitations will have a set of <a href=\"/english/department/mi/index.asp\">instructions</a> the electronic system will use to invite candidates from the pool. These instructions will be posted on this website before each round of invitations.</p>",
+            "korean" : {
+              "-K_ubmNuLQTTJ_ijgPqa" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967558,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<p>These instructions will include:</p>   <ul>     <li>the date and time of the round of invitations,</li>     <li>the number of candidates that will get an ITA, and </li>     <li>if it applies, which specific immigration program(s) will be included. </li>   </ul>   <p>If the instructions do not specify which immigration program the candidates must be eligible for, the invitations will be based solely on the Comprehensive Ranking System (CRS) score.</p>",
+            "korean" : {
+              "-K_ubmNvVtlMsqDexDBt" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967562,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<h2>Express Entry Year-End Report 2015</h2>   <p><a href=\"/english/resources/reports/ee-year-end-2015.asp\">This report</a> is a snapshot of the Express Entry system for the first year of implementation. It is based on a data extract as of January&nbsp;3, 2016. It includes information on the  distribution of candidates in the Express Entry pool, information on the  characteristics of candidates invited to apply in 2015 as well as information  on the number of admissions through Express Entry.</p>",
+            "korean" : {
+              "-K_ubmNvVtlMsqDexDBu" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967563,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<h2 id=\"results\">Results: Rounds of invitations</h2>   <p><strong>Ministerial Instructions respecting invitations to apply for permanent residence under the Express Entry system – January 4, 2017</strong></p>   <p><strong>No program specified</strong></p>   <p><a href=\"/english/department/mi/index.asp?expand=mi-pr-express#mi-pr-express\" rel=\"nofollow\">See full text of Ministerial Instruction</a></p>   <table class=\"table\">     <thead>       <tr>         <th scope=\"col\">Number of invitations issued</th>         <th scope=\"col\"><abbr title=\"Comprehensive Ranking System\">CRS</abbr> score of lowest-ranked candidate invited</th>       </tr>     </thead>     <tbody>       <tr>         <td>2,902<sup id=\"fn50-rf\"><a class=\"fn-lnk\" href=\"#fn50\"><span class=\"wb-inv\">Footnote </span>*</a></sup></td>         <td>468&nbsp;points</td>       </tr>     </tbody>   </table>",
+            "korean" : {
+              "-K_ubmNw1aLG7PmbuK_L" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820967564,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "Submit_your_profile" : {
+        "link" : "http://www.cic.gc.ca/english/immigrate/skilled/profile.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "<header> \t\t<h2 id=\"cn-cont\">Fill out your profile – Skilled immigrants (Express Entry)</h2> \t</header>         <p><strong>Note</strong>: We are updating the Express Entry system:</p>         <ul>           <li>you can now earn points for study in Canada</li>           <li>a valid job offer now only needs to be for one year, and some  job offers no longer need an LMIA</li>           <li>the amount of points you get for a job offer has changed.</li>           <li>you now have 90 days to apply instead of 60.</li>         </ul>          <p><a href=\"/english/department/media/notices/2016-11-19.asp\">Find  out more about these changes</a> and how they may affect you.</p>  \t\t<p>As of January&nbsp;1,&nbsp;2015, to come to Canada as a skilled immigrant, you must use the Express Entry system. This is a process where you:</p> \t\t<ul> \t\t\t<li>find out if you may be eligible, and if so,</li> \t\t\t<li>create a free online Express Entry profile.</li> \t\t</ul>",
+            "korean" : {
+              "-K_ubkyoKEvXgUUTIP__" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961793,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<p>The information in your profile will be used to determine if you are eligible to immigrate to Canada. If you are, you will be placed in a <a href=\"/english/immigrate/skilled/pool.asp\">pool with other candidates</a> and you will be ranked using several factors. Top candidates will be <a href=\"/english/immigrate/skilled/invitations.asp\">invited to apply</a> and will then be able to <a href=\"/english/immigrate/skilled/apply-how.asp\">apply online for permanent residence</a>.</p>",
+            "korean" : {
+              "-K_ubkyrg-GvdWjbNEDZ" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961799,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<p><strong>Note: Completing an online Express Entry profile or entering the pool does not guarantee that you will get an invitation to apply for permanent residence.</strong></p> \t\t<p>To help you fill out your online profile, you may want to open this page in a different browser, tab or window while you do so. You can then refer back to this information as needed to guide you through the form.</p>",
+            "korean" : {
+              "-K_ubkysHdk9y6ew_Izp" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961800,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<h2>Before you start </h2>  \t\t\t<p>1. You will need to take a <a href=\"/english/immigrate/skilled/language-testing.asp\">language test</a>. We will use your test results to see if you are eligible to immigrate to Canada under one of the <a href=\"/english/immigrate/skilled/apply-who-express.asp\">federal programs that are part of Express Entry</a>.</p>",
+            "korean" : {
+              "-K_ubkyx-bdyuSMSn5tJ" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961805,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<p> 2. If you were educated <strong>outside Canada</strong>, you may need to have your <a href=\"/english/immigrate/skilled/assessment.asp\">educational credentials assessed</a> against Canadian standards.<br /> \t\t\t\tThis <strong>is not</strong> mandatory if: \t\t\t\t<ul> \t\t\t\t\t<li>you got at least one year of recent work experience <strong>in Canada</strong>, or</li> \t\t\t\t\t<li>your work experience is in a <a href=\"/english/immigrate/trades/apply-who.asp#noc\">skilled trade</a> (skilled manual work).</li> \t\t\t\t</ul> \t\t\t\t<strong>Note:</strong> Even if you do not need to have your foreign education assessed to be eligible under Express Entry, <strong>you may want to do so</strong> in order to increase your score and chances of being invited to apply.</p>",
+            "korean" : {
+              "-K_ubkz0IBsKxBY8CPL8" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961814,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<p>3. You need to know<strong> the skill type of the job your work experience is in </strong>(as well as the job you plan to have in Canada, if they are different). <strong>You will use </strong>Canada&rsquo;s job classification system<strong> (the National Occupational Classification or NOC) to find out whether your work experience is valid under one of the three federal programs.</strong></p>",
+            "korean" : {
+              "-K_ubkz6MWX8ARF6WcVx" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961815,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph07" : {
+            "english" : "<h2>To find your job title, code and skill type</h2> \t\t<p>This job code is <strong>referred to as your &quot;NOC code&quot; in the Express Entry profile</strong>. See <a href=\"/english/immigrate/skilled/noc.asp\">Find your NOC</a> to find the NOC information that best matches your jobs.</p> \t\t<p><strong>You will need this information again, so make sure to write it down and keep it with the other papers you need, such as your passport.</strong></p>",
+            "korean" : {
+              "-K_ubkz72v3c3W5vuLib" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961817,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph08" : {
+            "english" : "<h3>Step 1: See if you may be eligible</h3> \t\t<p>You can use our online tool, <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a>, to see if you meet the criteria to get into the Express Entry pool.  It will take you about 15 minutes. </p> \t\t<p>You will need your <strong>language test results</strong>, your <strong>NOC skill type or level</strong> described above and your Education Credential Assessment (ECA).</p> \t\t<p>When you get to the end, a reference number will show on the screen. Write it down. You will need it later when you go to build your profile.</p>",
+            "korean" : {
+              "-K_ubkzGA6sxn49h2tDm" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961827,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph09" : {
+            "english" : "<h3>Step&nbsp;2: Build your online Express Entry profile  </h3> \t\t<p>If you get a positive result from Come to Canada, it will send you to <a href=\"/english/e-services/account.asp\">your account</a>. If you do not already have <a href=\"/english/e-services/account.asp\">an account</a>, you will need to create one. Then you will fill out an Express Entry profile to tell us about your: </p> \t\t<ul> \t\t\t<li>identity</li> \t\t\t<li>contact information</li> \t\t\t<li>education in more detail</li> \t\t\t<li>work experience in more detail</li> \t\t\t<li>language</li> \t\t\t<li>family who would come with you to Canada (dependants)</li> \t\t</ul>",
+            "korean" : {
+              "-K_ubkzHFsgSuE1vEEb6" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961827,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph10" : {
+            "english" : "<p>You will need: </p> \t\t<ul> \t\t\t<li>your <strong>passport or travel document</strong> (or other national identity document, if you do not have one of these)</li>  \t\t\t<li>your NOC job title and code (see <strong>Before you start</strong>, above)</li> \t\t\t<li>your <a href=\"/english/immigrate/skilled/language-testing.asp\">language test</a> results (either IELTS, CELPIP or TEF)</li> \t\t\t<li>your <a href=\"/english/immigrate/skilled/assessment.asp\">Educational Credential Assessment</a> result, if you have one (see <strong>Before you start</strong>, above)</li> \t\t\t<li>a copy of your written job offer from an employer in Canada, if you have one</li> \t\t\t<li>a copy of your provincial nomination, if you have one, and</li> \t\t\t<li>your personal reference code from the <a href=\"/ctc-vac/ee-start.asp\">Come to Canada tool</a>, if you have one. (It looks like this: <strong class=\"nowrap\">JM1234567890</strong>. We use it to bring the answers you provided in the tool into <a href=\"/english/e-services/account.asp\">your account</a> so you do not have to answer the questions again. If you go to the profile builder directly through <a href=\"/english/e-services/account.asp\">your account</a>, you will not have one.)</li> \t\t</ul>",
+            "korean" : {
+              "-K_ubkzIVHk4pPGK93cn" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961828,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph11" : {
+            "english" : "<h2>To create your Express Entry profile</h2> \t\t<ol> \t\t\t<li>Follow the instructions to create an <a href=\"/english/e-services/account.asp\">account</a> if you do not already have one. The system will give you a number that you will use each time you sign in.</li> \t\t\t<li>If you have a personal reference code from the <a href=\"/ctc-vac/ee-start.asp\">Come to Canada tool</a>, enter it when it prompts you. If you do not have a code, go to Step&nbsp;3.</li> \t\t\t<li>Enter your personal details, work experience, education, etc. <br /> \t\t\t\t\t(<strong>Note:</strong> You may exit the profile at any time. Your information will be saved. But, if you do not complete the Express Entry profile in 90 days, you will not be able to submit it and will have to start again.)</li> \t\t\t<li>Submit your profile online.</li> \t\t</ol>",
+            "korean" : {
+              "-K_ubkzKrRXWyJyTF7_H" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961833,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph12" : {
+            "english" : "<p>If you meet the Express Entry criteria, including the requirements for at least one of the <a href=\"/english/immigrate/skilled/apply-who-express.asp\">three immigration programs</a>, you will be accepted into the <a href=\"/english/immigrate/skilled/pool.asp\">Express Entry pool of candidates</a>. If you are invited to apply for permanent residence, we will tell you at that time which program to apply under.</p> \t\t<p><strong>Important</strong>: Submitting an Express Entry profile does not mean you have applied for permanent residence, or that you will be invited to. If we invite you to apply, you will then need to give us more information in your application for permanent residence.</p>",
+            "korean" : {
+              "-K_ubkzMHG4SnUuIx1vY" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961833,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph13" : {
+            "english" : "<h2>Register with Job Bank</h2> \t\t<p>To finish your Express Entry profile you must register with the Government of Canada&rsquo;s <a href=\"http://www.jobbank.gc.ca/home-eng.do?lang=eng\">Job Bank</a> if you do not already have: </p> \t\t<ul> \t\t\t<li>a valid job offer, or </li> \t\t\t<li>a nomination from a province or territory.</li> \t\t</ul> \t\t<p>Job Bank is an easy, online job search tool which will connect you with employers and jobs in Canada based on your skills and experience.</p> \t\t<p><strong>If you do not register with Job Bank within 30 days your Express Entry profile will expire. </strong></p>",
+            "korean" : {
+              "-K_ubkzOPATefX6KD4Gd" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961834,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph14" : {
+            "english" : "<h2>If you are eligible</h2> \t\t<h3>The Express Entry pool </h3> \t\t<p>If you meet the requirements, we will place you into the <a href=\"/english/immigrate/skilled/pool.asp\">Express Entry pool of candidates</a>. You will get a message in <a href=\"/english/e-services/account.asp\">your account</a> to let you know. </p> \t\t<p>You will be given a score using a ranking system  based on factors that have been shown to help immigrants prosper in Canada. The  higher your score, the more likely you are to be invited to apply for permanent  residence. We plan to issue Invitations to Apply to candidates from the pool  regularly. </p>",
+            "korean" : {
+              "-K_ubkzRlMFok0i7Mvcu" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961835,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph15" : {
+            "english" : "<p>If you are accepted into the Express Entry pool, you should start getting any supporting documents you may need for your application for permanent residence. You could get an invitation to apply at any time.</p> \t\t<p>You will have a better chance of being invited to apply if you: </p> \t\t<ul> \t\t\t<li>are nominated by a province or territory, or </li> \t\t\t<li>have a <a href=\"/english/immigrate/skilled/offer.asp\">valid job offer</a> from an employer in Canada.</li> \t\t</ul>",
+            "korean" : {
+              "-K_ubkzRlMFok0i7Mvcv" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820961835,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph16" : {
+            "english" : "<p>You will get extra points for these factors.</p> \t\t<p><strong>Note:</strong> you must update the information in your profile if your situation changes. For example, if: </p> \t\t<ul> \t\t\t<li>there are changes to your work experience.</li> \t\t\t<li>you get a different language test result, </li> \t\t\t<li>you complete more education, </li> \t\t\t<li>there is a change in your family, such as the birth of a child or a divorce, or</li> \t\t\t<li>one of your children is no longer a dependent (including if they turn&nbsp;19 during this time).</li> \t\t</ul>",
+            "korean" : {
+              "-K_w5Iy1r9aNB_8fejJ-" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483845746643,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph17" : {
+            "english" : "<h3>Being invited to apply</h3> \t\t<p>If you get an <a href=\"/english/immigrate/skilled/invitations.asp\">invitation to apply</a>, you can apply for permanent residence. You will be invited <strong>only if</strong> you: </p> \t\t<ul> \t\t\t<li>have been nominated by a province or territory, or</li> \t\t\t<li>are among the top ranked in the pool based on your skills and experience.</li> \t\t</ul> \t\t<p>If you are invited, you will have <strong>90&nbsp;days</strong> to <a href=\"/english/immigrate/skilled/apply-how.asp\">apply online for permanent residence</a>. </p> \t\t<p>You must submit a complete application with all supporting documents or we will reject your application.</p>",
+            "korean" : {
+              "-K_w5Iy7rnBUpmpyYzjU" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483845746644,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph18" : {
+            "english" : "<p>Once you complete your application and submit it online, we will process it quickly. We process most applications through Express Entry in six months or less. (This period starts on the date we get a complete application and ends on the date a final decision is made.)</p> \t\t<p>You will have to include copies of all documents we ask you for, like <a href=\"/english/information/security/police-cert/intro.asp\">police certificates</a>, before we will process your application. To keep your application from being rejected, you may want to get some of these documents ready while you are in the Express Entry pool.</p>",
+            "korean" : {
+              "-K_w5Iy82zh8OKZ-waio" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483845746645,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "Understand_the_ranking_system" : {
+        "link" : "http://www.cic.gc.ca/english/express-entry/criteria-crs.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "<header>   <h2 id=\"cn-cont\">Entry criteria and the Comprehensive Ranking System</h2> </header>   <p>Note: The  points you can get for a job offer has changed. You can now get:</p>    <ul>     <li>200 points for NOC 00 jobs with a valid job offer</li>     <li>50 points for any other NOC 0, A and B jobs with a valid job  offer</li>     <li>additional points for study <strong>in  Canada</strong> above high school:         <ul>           <li>15 points for a one- or two-year diploma or certificate</li>           <li>30 points for a degree, diploma or certificate of three years or longer, or a Master’s, <a href=\"/english/immigrate/skilled/eca-conversion.asp#prof\">professional</a> or doctoral degree of at least one year.</li>         </ul>     </li>   </ul>",
+            "korean" : {
+              "-K_ubm0AGbFuSFLTsiOH" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966042,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<p>Find  out more about the recent <a href=\"/english/department/media/notices/2016-11-19.asp\">changes to  Express Entry</a>.</p>    <p>The <a href=\"/english/immigrate/skilled/index.asp\">Express Entry system</a> creates a <a href=\"/english/immigrate/skilled/pool.asp\">pool of pre-assessed candidates</a> that may be eligible to  immigrate to Canada. Candidates get points based on a number of criteria, and  the highest ranking candidates in the pool are <a href=\"/english/immigrate/skilled/invitations.asp\">invited to apply</a> to immigrate to  Canada.</p>    <p>There  are different requirements to get into the pool and to be chosen from it. You  must meet all the entry criteria to get into the pool. To be chosen from the  pool, you must have one of the highest-ranking scores (see below) when there is  a round of invitations.</p>",
+            "korean" : {
+              "-K_ubm0Ba1SKKcoWZhTJ" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966043,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<h2>Pool entry criteria</h2>    <p>To get into the Express Entry pool, you will need to meet the criteria of one of the federal immigration programs subject to Express Entry:</p>    <ul>     <li>the <a href=\"/english/immigrate/skilled/apply-who.asp\">Federal Skilled Worker Program</a>,</li>     <li>the <a href=\"/english/immigrate/trades/apply-who.asp\">Federal Skilled Trades Program</a>, or</li>     <li>the <a href=\"/english/immigrate/cec/apply-who.asp\">Canadian Experience Class</a>.</li>   </ul>    <p>You can read about the criteria of any of these  programs at the above links. Or, you can use our online tool, <a href=\"/ctc-vac/getting-started.asp\">Come to Canada</a>, to see if you might  meet the criteria to get into the Express Entry pool.</p>",
+            "korean" : {
+              "-K_ubm0Ba1SKKcoWZhTK" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966045,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<h2 id=\"crs\">Comprehensive Ranking System</h2>    <p>The Comprehensive Ranking System (CRS) is a points-based system that is used to assess and score a <a href=\"/english/immigrate/skilled/profile.asp\">candidate&rsquo;s profile</a> to rank them in the Express Entry pool.</p>    <p>The CRS will assess the profile information you submit, including: </p>    <ul>     <li>skills, </li>     <li>work experience, </li>     <li>language ability, </li>     <li>education and other factors. </li>   </ul>",
+            "korean" : {
+              "-K_ubm0CKbZ5wnEt2IGv" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966046,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<p>We have found  these factors all play a role in economic success for immigrants once in  Canada. You can get additional points if you have a <a href=\"/english/immigrate/skilled/offer.asp\">job offer</a> or <a href=\"/english/immigrate/provincial/index.asp\">a nomination by one of Canada&rsquo;s  provinces or territories</a>.</p>    <p>We regularly  send an invitation to apply to the highest ranking candidates in the pool. If  you are invited, you can apply to immigrate as a permanent resident.</p>",
+            "korean" : {
+              "-K_ubm0E04ujQeQHPIcX" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966047,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<h3>Comprehensive Ranking System formula</h3>    <p>All Express Entry candidates are given a score out of&nbsp;1,200, based on the four parts of the Comprehensive Ranking System formula:</p>    <ul>     <li>Skills and experience factors (that we know are key to economic success for immigrants once in Canada) </li>     <li>Spouse or common-law partner factors (such as their language skills and education – these are known to result in better economic success for both the spouse or common-law partner and the candidate)</li>     <li>Skills transferability (including education and work experience – factors that when combined, result in better chances of being employed, and higher earnings)</li>     <li>Additional points for those with a nomination from a province or territory, a valid job offer or a Canadian degree, diploma or certificate.</li>   </ul>",
+            "korean" : {
+              "-K_ubm0E04ujQeQHPIcY" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966052,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph07" : {
+            "english" : "<table class=\"table\">       <tr>         <th>A. Single candidates</th>         <th>B. Candidates spouses or common-law partners that will come with them to Canada<br>           (The maximum number of points is the same no matter the person&rsquo;s marital status.)</th> \t\t</tr>       <tr>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a1\">1. Skills and experience factors (maximum 500)</a><br>             <strong>+</strong></p></td>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a1\">1. Skills and experience factors (maximum 460)</a><br>             <strong>+</strong></p></td>       </tr>       <tr>         <td><p>2. N/A<br>             <strong>+</strong></p></td>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a2\">2. Spouse or common-law partner factors (maximum 40)</a><br>             <strong>+</strong></p></td>       </tr>       <tr>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a3\">3. Skill transferability factors (maximum 100)</a><br>             <strong>+</strong></p></td>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a3\">3. Skill transferability factors (maximum 100)</a><br>             <strong>+</strong></p></td>       </tr>       <tr>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a4\">4. Additional points (maximum 600)</a></p></td>         <td><p><a href=\"/english/express-entry/grid-crs.asp#a4\">4. Additional points (maximum 600)</a></p></td>       </tr>       <tr class=\"active\">         <td><strong>Grand total (maximum 1,200)</strong></td>         <td><strong>Grand total (maximum 1,200)</strong></td>       </tr>   </table>   <p>See the full <a href=\"/english/express-entry/grid-crs.asp\">Comprehensive Ranking System criteria</a>.</p>",
+            "korean" : {
+              "-K_ubm0IcFVyXX_gxwBm" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820966053,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "Who_can_apply" : {
+        "link" : "http://www.cic.gc.ca/english/immigrate/skilled/apply-who-express.asp",
+        "paragraphs" : {
+          "paragraph01" : {
+            "english" : "  <header>     <h2 id=\"cn-cont\">Who can apply — Skilled immigrants (Express Entry)</h2>   </header>     <p><strong>Note</strong>: We have updated the Express Entry system:</p>      <ul>       <li>you can now earn points for study in Canada</li>       <li>a valid job offer now only needs to be for one year, and some  job offers no longer need an LMIA</li>       <li>the amount of points you get for a job offer has changed.</li>       <li>you now have 90 days to apply instead of 60.</li>     </ul>      <p><a href=\"/english/department/media/notices/2016-11-19.asp\">Find out more  about these changes</a> and how they may affect you.</p>  \t<p>Skilled immigrants are chosen for their skills and ability to contribute to Canada’s economy.</p>",
+            "korean" : {
+              "-K_ubkfKAzJ0VzGeCsr8" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960549,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph02" : {
+            "english" : "<h2 id=\"eligibility\">Program eligibility</h2>     <p>Express Entry covers three of our key economic immigration programs:</p>     <ul>      <li>the <a href=\"/english/immigrate/skilled/apply-who.asp\">Federal Skilled Worker Program</a>,</li>      <li>the <a href=\"/english/immigrate/trades/apply-who.asp\">Federal Skilled Trades Program</a>, and</li>      <li>the <a href=\"/english/immigrate/cec/apply-who.asp\">Canadian Experience Class</a>.</li>     </ul>     <p>If you are eligible to immigrate under one of the above federal immigration programs:</p>     <ol>      <li>we will place you in a <a href=\"/english/immigrate/skilled/pool.asp\">pool</a> with others who are also eligible,</li>      <li>we will then <a href=\"/english/express-entry/criteria-crs.asp\">rank</a> you and the others using several factors,</li>      <li>if you are one of the top candidates, you will get an Invitation to Apply</li>      <li>if we <a href=\"/english/immigrate/skilled/invitations.asp\">invite you to apply</a>, you can <a href=\"/english/immigrate/skilled/apply-how.asp\">apply online for permanent residence</a>.</li>     </ol>",
+            "korean" : {
+              "-K_ubkfQMYWvLdseWd3g" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960555,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph03" : {
+            "english" : "<p>Through Express Entry, <strong>provinces and territories </strong>will also be able to nominate candidates in the Express Entry pool under their <a href=\"/english/immigrate/provincial/apply-who.asp\">Provincial Nominee Program</a> where applicable.</p>     <p>To be eligible for Express Entry, you must:</p>     <ul>      <li>meet the requirements of one of the above programs, and</li>      <li>create a Job Match account with Job Bank, a database that can help match you with employers looking for workers with your skills (unless you have a valid job offer). To do so:      \t<ul> \t\t\t<li>go to the <a href=\"https://seeker.jobbank.gc.ca/seeker/login.xhtml\">Job Match sign-in page</a></li> \t\t\t<li>click the “Sign up now!” button</li> \t\t\t<li>read the privacy notice and click “I agree”</li> \t\t\t<li>follow the instructions to create an account.</li>        </ul>      </li>     </ul>",
+            "korean" : {
+              "-K_ubkfRa8mgjJeBDKL8" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960556,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph04" : {
+            "english" : "<div class=\"alert alert-info\">        <p><strong>Note</strong>: most <a href=\"/english/immigrate/skilled/offer.asp\">job offers</a> from an employer in  Canada must be supported by a <a href=\"/english/helpcentre/answer.asp?q=163&t=17\">Labour Market Impact Assessment (LMIA)</a>. An employer goes through this process to ensure there is a genuine labour  market need before they can hire foreign workers.</p>      </div>       <p>In some  cases, your employer does not need an LMIA to support your job offer. Find out  more about <a href=\"/english/immigrate/skilled/exempt.asp\">which types of jobs don&rsquo;t need an LMIA</a>.</p>  \t <p>If you have <a href=\"/english/immigrate/skilled/offer.asp\">a valid job offer</a>, you <strong>do not</strong> need to  register with Job Bank.</p>      <p>You can use our online tool, <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a>, to see if you meet the criteria to get into the Express Entry pool. </p>",
+            "korean" : {
+              "-K_ubkfS1em4Rk3BnKxO" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960557,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph05" : {
+            "english" : "<h2>Language</h2>     <p>You must show that you meet the <a href=\"/english/immigrate/skilled/language.asp\">minimum language requirements</a> for the category you are eligible under and provide your <a href=\"/english/immigrate/skilled/language-testing.asp\">language test results</a> from an agency designated by&nbsp;IRCC in your Express Entry profile.</p>     <p>Your&nbsp;<a href=\"/english/immigrate/skilled/language-testing.asp\">language test results&nbsp;</a>must be less than two years old on the day we get your complete application for permanent residence.</p>",
+            "korean" : {
+              "-K_ubkfTB32tBBHxLGZs" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960558,
+                "user" : "admin"
+              }
+            }
+          },
+          "paragraph06" : {
+            "english" : "<h2 id=\"work\">Skilled work experience</h2>     <p>According to the&nbsp;<a href=\"/english/immigrate/skilled/noc.asp\">Canadian National Occupational Classification (NOC)</a>, skilled work experience means:</p>     <ul>      <li>managerial jobs (NOC&nbsp;skill level 0)</li>      <li>professional jobs (NOC&nbsp;skill type A)</li>      <li>technical jobs and skilled trades (NOC&nbsp;skill type B)</li>     </ul>     <p>You must have at least 12 months of full-time, or an equal amount in part-time, skilled work experience. Full-time work means at least 30 hours of paid work per week.</p>",
+            "korean" : {
+              "-K_ubkfV0PYmZ18H6c57" : {
+                "content" : "please translate :)",
+                "faultyCount" : 0,
+                "timestamp" : 1483820960558,
+                "user" : "admin"
+              }
+            }
+          }
+        }
+      },
+      "link" : "http://www.cic.gc.ca/english/immigrate/skilled/candidate.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<p><strong>Note:</strong> We have updated the Express Entry system:</p>   <ul>     <li>you can now earn points for study in Canada</li>     <li>a valid job offer now only needs to be for one year, and some job offers no longer need an LMIA</li>     <li>the amount of points you get for a job offer has changed.</li>     <li>you now have 90 days to apply instead of 60.</li>   </ul>",
+          "korean" : {
+            "-K_w1hoHPvLrMmIOqoNG" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844803934,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<p><a href=\"/english/department/media/notices/2016-11-19.asp\">Find out more about these changes</a> and how they may affect you.</p> <p>If you want to come to Canada as a skilled immigrant, your first step is to become a candidate in the Express Entry pool.</p>   <p>If you are eligible:</p>   <ol>     <li>we will place you in a pool with others who are also eligible and give you a score,</li>     <li>we will then <a href=\"/english/express-entry/criteria-crs.asp\">rank you</a> using several factors, and</li>     <li>if you are one of the top candidates, you will be invited to apply to be a permanent resident of Canada.</li>   </ol>",
+          "korean" : {
+            "-K_w1hoS7uThZmaGLHnM" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844803935,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h2>Determine your eligibility</h2>   <p>Use the online tool, <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a>, to see if you meet the criteria to get into the Express Entry pool (or read about the <a href=\"/english/immigrate/skilled/apply-who-express.asp\">eligibility criteria for Express Entry</a>).</p>",
+          "korean" : {
+            "-K_w1hoVbT8nF7p6XtDs" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844803939,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<h2>Submit your profile</h2>   <p>If you are eligible, fill out your Express Entry profile online. You will need to create a MyCIC account to do this. It will ask you about your: </p>   <ul>     <li>language test scores,</li>     <li>education and educational credential assessment (if you need one) </li>     <li>work experience, and</li>     <li>other information we need in order to assess you.</li>   </ul>   <p>There is no cost to complete and submit an <a href=\"/english/immigrate/skilled/profile.asp\">Express Entry profile</a>.</p>",
+          "korean" : {
+            "-K_w1ho_IM5dS5URme1i" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844803947,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<h2>How the pool works</h2>   <p>If you create an Express Entry profile and you are eligible, you will be put into the Express Entry pool of candidates. Find out what happens <a href=\"/english/immigrate/skilled/pool.asp\">once you are in the pool</a>. </p>   <h2>Understand the scoring and ranking system</h2>   <p>Based on the information you put in your profile, you will be <a href=\"/english/express-entry/criteria-crs.asp\">given a score and ranked against others in the pool</a>.</p>",
+          "korean" : {
+            "-K_w1hocL8KLLVJwDxh0" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844803948,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<h2>Candidate rounds of invitations</h2>   <p>We will  regularly issue invitations to <a href=\"/english/express-entry/rounds.asp\">top candidates</a> from the pool so they  can apply for permanent residence.</p>   <h2>Invitations to apply</h2>   <p>If you get an <a href=\"/english/immigrate/skilled/invitations.asp\">invitation to apply</a>, you will be able to  apply for permanent residence online.</p>   <h2>Read the guide</h2>   <p>You can <a href=\"/english/immigrate/skilled/instruction-guide.asp\">review the instruction guide</a> for more information.</p>",
+          "korean" : {
+            "-K_w1wx0NAYr6_EBwcab" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483844865929,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Canadian_experience_class" : {
+      "link" : "http://www.cic.gc.ca/english/immigrate/cec/apply-who.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>   <h2 id=\"cn-cont\">Who can apply – Canadian Experience Class</h2> </header>   <div class=\"alert alert-info\">     <p><strong>Note:</strong> We have updated the Express Entry system. You can now earn up to 30 more CRS points for study in Canada. Giving points for study in Canada will make it easier for students to be invited to apply. <a href=\"/english/department/media/notices/2016-11-19.asp\">Find out more about these changes</a> and if they may affect you.</p>   </div>   <p>As of January 2015, we have a new system for people to apply to this program. It is called <a href=\"/english/immigrate/skilled/index.asp\">Express Entry</a>.</p>   <p>You can use our online tool, <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a>, to see if you meet the criteria to get into the Express Entry pool.</p>",
+          "korean" : {
+            "-K_uysO1NDiP6APESHOX" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021455,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<h2>Minimum requirements </h2>   <p>You must:</p>   <ul>     <li>have at least 12 months of full-time (or an equal amount in part-time) skilled work experience in Canada in the three years before you apply,</li>     <li>have gained your experience in Canada with the proper authorization,</li>     <li>meet the <a href=\"/english/immigrate/skilled/language.asp\">required language levels</a> needed for your job for each language ability (speaking, reading, writing and listening),</li>     <li>plan to live outside the province of Quebec.</li>   </ul>",
+          "korean" : {
+            "-K_uysO6AGpgNwPindps" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021460,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<p>Self-employment and work experience gained while you were a full-time student (for example, on a co-op work term) does not count under this program.</p>   <p>Note: The province of Quebec does not use Express Entry. They select their own skilled workers. See <a href=\"/english/immigrate/quebec/apply-how.asp\">Quebec-selected skilled workers</a> to find out more.</p>",
+          "korean" : {
+            "-K_uysO8cUlMq9GbcMd8" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021461,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<h2>Skilled work experience</h2>   <p>To be considered for the Canadian Experience Class, you need to have Canadian skilled work experience within three years of applying. According to the <a href=\"/english/immigrate/skilled/noc.asp\">Canadian National Occupational Classification (NOC)</a>, skilled work experience means:</p>   <ul>     <li>Managerial jobs (NOC skill level 0)</li>     <li>Professional jobs (NOC skill type A)</li>     <li>Technical jobs and skilled trades (NOC skill type&nbsp;B)</li>   </ul>   <p>Your experience must be at least 12 months of full-time (30 hours of paid work per week or more) or an equal amount in part-time hours.</p>",
+          "korean" : {
+            "-K_uysOAsHfrT8yL2suc" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021462,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<h3>Full Time</h3>   <p>30 hours/week for 12 months = 1 year full time (1,560 hours)</p>   <h3>Part time</h3>   <p>15 hours/week for 24 months = 1 year full time (1,560 hours)<br>     <strong class=\"text-uppercase\">Or</strong><br>     30 hours/week for 12 months at more than one job = 1 year full time (1,560 hours)</p>   <p>You must show that you did the duties set out in the lead statement of the occupational description in the NOC, including all the essential duties and most of the main duties listed.</p>",
+          "korean" : {
+            "-K_uysOB1Xjlfr1zoUYI" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021467,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<p>If you do not show that your experience meets the description in the NOC, we will not accept your application.</p>   <p><a href=\"/english/immigrate/skilled/noc.asp\">Find out the NOC code, title and skill type or level for your job</a>.</p>   <p>If your existing work permit is about to expire, you may be eligible for a <a href=\"/english/work/permit/extend/permanent.asp\">bridging open work permit</a>. If you are eligible, this permit can let you keep working while you wait for a final decision on your permanent residence application.</p>",
+          "korean" : {
+            "-K_uysODRab-u4PldoTE" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021467,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<h2>Education</h2>   <p>There is no education requirement for Canadian Experience Class. But, if you want <strong>to earn points for your education under Express Entry</strong>, you either need:</p>   <ul>     <li>a Canadian secondary (high school) or post-secondary certificate, diploma or degree,       <p class=\"text-uppercase mrgn-tp-md\">Or</p>     </li>     <li>a completed foreign <a href=\"/english/helpcentre/glossary.asp#educational_credential\">credential</a>, and</li>     <li>an&nbsp;<a href=\"/english/immigrate/skilled/assessment.asp\">Educational Credential Assessment (ECA) report from an agency approved by CIC</a>. [The report must show your foreign education is equal to a completed Canadian secondary (high school) or post-secondary certificate, diploma or degree.]</li>   </ul>   <div class=\"alert alert-info\">     <p><strong>Note:</strong> You will only benefit from getting an ECA if your foreign education is equal to a completed Canadian high school diploma or greater.</p>   </div>",
+          "korean" : {
+            "-K_uysOFy1fdn2JAmfxt" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021468,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<h2>Language ability</h2>   <p>You must:</p>   <ul>     <li>meet the <a href=\"/english/immigrate/skilled/language.asp\">minimum language level</a> of Canadian Language Benchmark (CLB) 7 for NOC 0 or A jobs OR Canadian Language Benchmark (CLB) 5 for NOC B jobs, and</li>     <li>take a <a href=\"/english/immigrate/skilled/language-testing.asp\">language test</a><strong> approved by Citizenship and Immigration Canada (CIC)</strong> that shows you meet the level for speaking, listening, reading and writing.</li>   </ul>   <p>You must show that you meet the <a href=\"/english/immigrate/skilled/language.asp\">requirements in English or French</a> by including the <a href=\"/english/immigrate/skilled/language-testing.asp\">test results</a> when you complete your Express Entry profile. Your test results must not be more than two years old on the day you apply for permanent residence or you will need to retake the test.</p>",
+          "korean" : {
+            "-K_uysOGFtOoxvp_-NhY" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021469,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph09" : {
+          "english" : "<h2>Principal applicant</h2>   <p>If you are married or live with a common-law foreign national partner in Canada, and that person also meets the requirements, one or both of you can fill out an Express Entry profile.</p>   <p>The person who is invited to apply and submits an application is the &ldquo;principal applicant.&rdquo;</p>   <p>A <a href=\"/english/helpcentre/glossary.asp#common_law_partner\">common-law partner</a> is a person who has lived with you in a conjugal relationship for at least one year. Common-law partner refers to both opposite-sex and same-sex couples. </p>",
+          "korean" : {
+            "-K_uysOHPjBfdTGLGvUW" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021473,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph10" : {
+          "english" : "<h2>Other requirements</h2>   <ul>     <li>You must be admissible to Canada. <a href=\"/english/information/inadmissibility/index.asp\">Find out more about inadmissibility</a>.</li>     <li>You must plan to live outside the province of <a href=\"http://www.immigration-quebec.gouv.qc.ca/en/index.html\">Quebec</a>.</li>   </ul>   <p>If you have skilled work experience and want to live in Canada permanently, use our <a href=\"/ctc-vac/ee-start.asp\">Come to Canada tool</a> to see if you are eligible for the Express Entry pool.</p>",
+          "korean" : {
+            "-K_uysOIBfDZ0Lt4s7WX" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483827021473,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Federal_skilled_trades" : {
+      "link" : "http://www.cic.gc.ca/english/immigrate/trades/apply-who.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>   <h2 id=\"cn-cont\">Determine your eligibility &mdash; Skilled trades</h2> </header>   <p>As of January 2015, we have a new system for people to apply to this program. It is called <a href=\"/english/immigrate/skilled/index.asp\">Express Entry</a>.</p>   <p>The Federal Skilled Trades Program is for people who want to become permanent residents based on being qualified in a skilled trade.</p>",
+          "korean" : {
+            "-K_ub1zotS54jNpBNF6R" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773439,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<h2>Minimum requirements</h2>   <p>To be eligible, you must:</p>     <p>* plan to live outside the province of Quebec (Note: The province of Quebec selects its own skilled workers. If you plan on living in Quebec, see <a href=\"/english/immigrate/quebec/index.asp\">Quebec-selected skilled workers for more information</a>),</p>     <p>* meet the <a href=\"/english/immigrate/skilled/language.asp\">required levels in English or French</a> for each language ability (speaking, reading, writing and listening),</p>     <p>* have at least two years of full-time work experience (or an equal amount of part-time work experience)<sup id=\"fn*-rf\"><a class=\"fn-lnk\" href=\"#fn*\"><span class=\"wb-inv\">Footnote </span>*</a></sup> in a skilled trade within the five years before you apply,</p>",
+          "korean" : {
+            "-K_ub1zucPkaA8Y6m1hK" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773446,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h2>Minimum requirements</h2>   <p>To be eligible, you must:</p>     <p>* plan to live outside the province of Quebec (Note: The province of Quebec selects its own skilled workers. If you plan on living in Quebec, see <a href=\"/english/immigrate/quebec/index.asp\">Quebec-selected skilled workers for more information</a>),</p>     <p>* meet the <a href=\"/english/immigrate/skilled/language.asp\">required levels in English or French</a> for each language ability (speaking, reading, writing and listening),</p>     <p>* have at least two years of full-time work experience (or an equal amount of part-time work experience)<sup id=\"fn*-rf\"><a class=\"fn-lnk\" href=\"#fn*\"><span class=\"wb-inv\">Footnote </span>*</a></sup> in a skilled trade within the five years before you apply,</p>",
+          "korean" : {
+            "-K_ub1zw3cPUwwQ-z0Pe" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773447,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<p>* meet the job requirements for that skilled trade as set out in the National Occupational Classification (NOC), except for needing a certificate of qualification, and</p>     <p>* have an <a href=\"/english/immigrate/skilled/offer.asp\">offer of full-time employment</a> for a total period of at least one year<sup id=\"fn**-rf\"><a class=\"fn-lnk\" href=\"#fn**\"><span class=\"wb-inv\">Footnote </span>**</a></sup> <strong>or</strong> a certificate of qualification in that skilled trade issued by a Canadian provincial or territorial authority.<sup id=\"fn***-rf\"><a class=\"fn-lnk\" href=\"#fn***\"><span class=\"wb-inv\">Footnote </span>***</a></sup></p>",
+          "korean" : {
+            "-K_ub1zza2o_0pdZTkpM" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773452,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<aside class=\"wb-fnote\" role=\"note\">     <h3 id=\"fn\" class=\"wb-inv\">Footnotes</h3>     <dl>       <dt>Footnote *</dt>       <dd id=\"fn*\">         <p>This means you have to work a total of at least 30&nbsp;hours over a period of one week for two years in your skilled trade within the five years before you apply. For example:</p>         <div class=\"mrgn-lft-md\">         <h4 class=\"mrgn-lft-xlg\">Full Time</h4>         <p>30 hours/week for 12 months = 1 year full time (1,560 hours)</p>         <h4 class=\"mrgn-lft-xlg\">Part time</h4>         <p>15 hours/week for 24 months = 1 year full time (1,560 hours)<br>         <strong>OR</strong><br>     30 hours/week for 12 months at more than one job = 1 year full time (1,560 hours)</p>     </div>         <p class=\"fn-rtn\"> <a href=\"#fn*-rf\"><span class=\"wb-inv\">Return to footnote </span>*<span class=\"wb-inv\"> referrer</span></a></p>       </dd>       <dt>Footnote **</dt>       <dd id=\"fn**\">         <p>Up to two employers can commit to employing you for at least one year of continuous full-time work, meaning a total of at least 30&nbsp;hours of work per week.</p>         <p class=\"fn-rtn\"> <a href=\"#fn**-rf\"><span class=\"wb-inv\">Return to footnote </span>**<span class=\"wb-inv\"> referrer</span></a></p>       </dd>       <dt>Footnote ***</dt>       <dd id=\"fn***\">         <p>In Canada, provinces and territories issue certificates of qualification in the skilled trades. To get a certificate, the provincial or territorial trades authority must assess your training, trade experience and skills to decide if you are eligible to write an exam to be certified.</p>         <p class=\"fn-rtn\"> <a href=\"#fn***-rf\"><span class=\"wb-inv\">Return to footnote </span>***<span class=\"wb-inv\"> referrer</span></a></p>       </dd>     </dl>   </aside>",
+          "korean" : {
+            "-K_ub2-1ScBDc4MgOnZj" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773452,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<h2 id=\"noc\">Skilled work experience</h2>   <p>Skilled Trades currently eligible for the Federal Skilled Trades Program are organized under these major and minor groups of the NOC:</p>   <ul>     <li>Major Group 72, industrial, electrical and construction trades,</li>     <li>Major Group 73, maintenance and equipment operation trades,</li>     <li>Major Group 82, supervisors and technical jobs in natural resources, agriculture and related production,</li>     <li>Major Group 92, processing, manufacturing and utilities supervisors and central control operators,</li>     <li>Minor Group 632, chefs and cooks, and</li>     <li>Minor Group 633, butchers and bakers.</li>   </ul>",
+          "korean" : {
+            "-K_ub2-5LbZjlbMu_8_6" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773458,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<p>These major NOC groups are subdivided into different occupations. (All are NOC skill type B.)</p>   <p> You must show that you did the duties set out in the lead statement of the occupational description in the NOC, including all the essential duties and most of the main duties listed.</p>   <p> If you do not show that your experience meets the description in the NOC, we will not accept your application.</p>   <p> <a href=\"/english/immigrate/skilled/noc.asp\">Find out the NOC code, title and skill type or level for your job</a>.</p>",
+          "korean" : {
+            "-K_ub2-7MylCHGw-LjEu" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773459,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<p> Federal Skilled Trades Program applications must be made based on the 2011 version of the <a href=\"http://www5.hrsdc.gc.ca/noc/english/noc/2011/Welcome.aspx\">NOC</a>. However, if the application includes a <a href=\"/english/helpcentre/answer.asp?q=163&amp;t=17\">Labour Market Impact Assessment</a> (previously Labour Market Opinion or LMO) from Employment and Social Development Canada based on the 2006 version of the NOC, it will be accepted by CIC as long as the applicant&rsquo;s occupation corresponds to a 2011 NOC code that is eligible for the program.</p>",
+          "korean" : {
+            "-K_ub2-BEgQM1-imD1di" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773464,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph09" : {
+          "english" : "<h2>Education</h2>   <p>There is no education requirement for the Federal Skilled Trades Program. But, if you want to earn points for your education under Express Entry, you either need:</p>   <ul>     <li>a Canadian post-secondary certificate, diploma or degree     <p class=\"text-uppercase\">Or</p>    </li>     <li>a completed foreign <a href=\"/english/helpcentre/glossary.asp#educational_credential\">credential</a>, and</li>     <li>an <a href=\"/english/immigrate/skilled/assessment.asp\">Educational Credential  Assessment (ECA) report  from an  agency approved by CIC</a>. [The report must   show your foreign education is equal to a  completed Canadian secondary (high  school) or post-secondary certificate, diploma or degree.]</li> </ul>   <div class=\"alert alert-info\">   <p><strong>Note:</strong> You will only  benefit from getting an ECA if your  foreign education is equal to a completed Canadian high school diploma or  greater.</p>   </div>",
+          "korean" : {
+            "-K_ub2-FY4rba7CQaXIl" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773465,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph10" : {
+          "english" : "<h2>Language ability</h2>   <p>You must:</p>   <ul>     <li>meet the <a href=\"/english/immigrate/skilled/language.asp\">minimum language level</a> of Canadian Language Benchmark (CLB) 5 for speaking and listening, and Canadian Language Benchmark (CLB) 4 for reading and writing, and</li>   </ul>   <ul>     <li><a href=\"/english/immigrate/skilled/language-testing.asp\">take a language test</a> approved by Citizenship and Immigration Canada (CIC) that shows you meet the level for speaking, listening, reading and writing.</li>   </ul>   <p>You must show that you meet the <a href=\"/english/immigrate/skilled/language.asp\">requirements in English or French</a> by including the <a href=\"/english/immigrate/skilled/language-testing.asp\">test results</a> when you complete your Express Entry profile. Your test results must not be more than two years old on the day you apply for permanent residence.</p>",
+          "korean" : {
+            "-K_ub2-GBnsfpt2Y8bL9" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773466,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph11" : {
+          "english" : "<h2>Principal applicant</h2>   <p>If you are married or live with a <a href=\"/english/helpcentre/glossary.asp#common_law_partner\">common-law partner</a> who also meets the above conditions, you can decide which one of you will apply under Express Entry as the principal (main) applicant.</p>   <p>A common-law partner is a person who has lived with you in a conjugal relationship for at least one year. Common-law partner refers to both opposite-sex and same-sex couples.</p>   <p> Check to see which one of you is most likely to be found eligible. That person should apply as the principal applicant.</p>",
+          "korean" : {
+            "-K_ub2-NPm3Gvx34VXSl" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773472,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph12" : {
+          "english" : "<h2>Other requirements</h2>   <ul>     <li>You must be admissible to Canada. <a href=\"/english/information/inadmissibility/index.asp\">Find out more about inadmissibility</a>.</li>     <li>You must plan to live outside the province of <a href=\"http://www.immigration-quebec.gouv.qc.ca/en/index.html\">Quebec</a>.</li>   </ul>",
+          "korean" : {
+            "-K_ub2-O75FxAa13vT-U" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820773478,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph13" : {
+          "english" : "<h2 id=\"prov\">Be assessed by the province or territory</h2>   <p>You will likely have to go to the province or territory to be assessed. You may also need an employer in Canada to give you experience and training.</p>   <p> You should go to the website of the body that governs trades for the province/territory where you would like to live and work. The process is different depending on where you want to go.</p>   <p> Each website has more details about whether you need a certificate of qualification to work in that province or territory in a specific skilled trade, and what you have to do to get one.</p>",
+          "korean" : {
+            "-K_wASFac_Gs3JWW-xoR" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483847095413,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph14" : {
+          "english" : "<ul>     <li><a href=\"http://www.tradesecrets.org/\">Alberta</a></li>     <li><a href=\"http://www.itabc.ca/apply-apprenticeship/challenging-exams\">British Columbia</a></li>     <li><a href=\"http://www.manitoba.ca/tradecareers\">Manitoba</a></li>     <li><a href=\"http://www2.gnb.ca/content/gnb/en/departments/post-secondary_education_training_and_labour/Skills/content/ApprenticeshipAndTrades/DesignatedOccupations.html\">New Brunswick</a></li>     <li><a href=\"http://www.aes.gov.nl.ca/app\">Newfoundland and Labrador</a></li>     <li><a href=\"https://www.ece.gov.nt.ca/advanced-education/apprenticeship-trade-occupation-certification/apprenticeship-occupation-information\">Northwest Territories</a></li>     <li><a href=\"http://nsapprenticeship.ca/\">Nova Scotia</a></li>     <li><a href=\"http://www.gov.nu.ca/family-services/information/apprenticeship-trade-and-occupations-certification\">Nunavut</a></li>     <li><a href=\"http://www.ontarioimmigration.ca/en/working/OI_HOW_WORK_TRADES.html\">Ontario</a></li>     <li><a href=\"http://www.apprenticeship.pe.ca/\">Prince Edward Island</a></li>     <li><a href=\"http://www.saskapprenticeship.ca/\">Saskatchewan</a></li>     <li><a href=\"http://www.education.gov.yk.ca/certification.html\">Yukon</a></li>   </ul>   <p>If you work in a skilled trade and want to live in Canada permanently, use our <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a> tool to see if you are eligible for the Express Entry pool.</p>",
+          "korean" : {
+            "-K_wAgbF6p_0BxWwKtBh" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483847158303,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Federal_skilled_workers" : {
+      "link" : "http://www.cic.gc.ca/english/immigrate/skilled/apply-who.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>   <h2 id=\"cn-cont\">Determine your eligibility &ndash; Federal skilled workers</h2> </header> <section>   <div class=\"alert alert-info\">     <p>Citizenship and Immigration Canada (CIC) has been returning fees paid to the Department for Federal Skilled Worker (FSW) applications affected by the backlog elimination announced in 2012.</p>     <p class=\"mrgn-lft-md\">If you applied to the FSW program before February&nbsp;27, 2008, and have not heard from CIC about whether a decision has been made based on the assessment of your application, you may be affected by this law. Please see <a href=\"/english/department/media/notices/notice-returns.asp\">how you can get your fee returned</a>.</p>   </div>",
+          "korean" : {
+            "-K_ubo33R-VAdB8WPuks" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974418,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<p>As of January 2015, we have a new system to manage how people apply to this program. It is called <a href=\"/english/immigrate/express/express-entry.asp\">Express Entry</a>.</p>   <p>You can use our online tool, <a href=\"/ctc-vac/ee-start.asp\">Come to Canada</a>, to see if you meet the criteria to get into the Express Entry pool.</p>   <h2>Minimum requirements</h2>   <h3>Skilled work experience</h3>   <p>Your work experience must be:</p>   <ul>     <li>at least one year (1,560 hours total / 30 hours per week), continuous full-time or an equal amount in part-time,</li>     <li>paid work (volunteer work, unpaid internships do not count),</li>     <li>in the same job,</li>     <li>within the last 10 years, and</li>     <li>at skill type 0, or skill levels A or B of the 2011 <a href=\"/english/immigrate/skilled/noc.asp\">National Occupational Classification</a> (NOC).</li>   </ul>",
+          "korean" : {
+            "-K_ubo34GtYFyW3-q4J4" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974423,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h3>Full Time</h3>   <p>30 hours/week for 12 months = 1 year full time (1,560 hours)</p>   <h3>Part time</h3>   <p>15 hours/week for 24 months = 1 year full time (1,560 hours)<br>     <strong>OR</strong><br>     30 hours/week for 12 months at more than one job = 1 year full time (1,560 hours)</p>   <p>You must show that you did the duties set out in the lead statement of the occupational description in the NOC, including all the essential duties and most of the main duties listed.</p>   <p>If you cannot show that your work experience meets the description in the NOC, you are not eligible under this program.</p>   <p><a href=\"/english/immigrate/skilled/noc.asp\">Find out the NOC code, title and skill type or level for your job</a>.</p>",
+          "korean" : {
+            "-K_ubo35roRa1vsWdIY_" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974424,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<h3>Language ability</h3>   <p>You must:</p>   <ul>     <li>meet the <a href=\"/english/immigrate/skilled/language.asp\">minimum language level</a> of Canadian Language Benchmark (CLB) 7, and</li>     <li><a href=\"/english/immigrate/skilled/language-testing.asp\">take a language test</a> <strong>approved by Citizenship and Immigration Canada (CIC)</strong> that shows you meet the level for speaking, listening, reading and writing.</li>   </ul>   <p>You must show that you meet the <a href=\"/english/immigrate/skilled/language.asp\">requirements&nbsp;in English or French</a> by including the <a href=\"/english/immigrate/skilled/language-testing.asp\">test results</a> when you complete your Express Entry profile. Your&nbsp;test results&nbsp;must not be more than two years old on the day you apply for permanent residence.</p>",
+          "korean" : {
+            "-K_ubo36YgpzhLMoUzC3" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974425,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<h3>Education</h3>   <p>You must have:</p>   <ul>     <li>a Canadian secondary (high school) or  post-secondary certificate, diploma or degree,     <p class=\"text-uppercase mrgn-tp-md\">Or</p>    </li>     <li>a completed foreign <a href=\"/english/helpcentre/glossary.asp#educational_credential\">credential</a>, and</li>     <li>an <a href=\"/english/immigrate/skilled/assessment.asp\">Educational Credential Assessment (ECA) report from  an agency approved by CIC</a>. [The report  must show your foreign education is equal to a completed Canadian secondary (high school) or post-secondary certificate, diploma or degree.]</li>   </ul>",
+          "korean" : {
+            "-K_ubo36YgpzhLMoUzC4" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974426,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<h2>Six selection factors</h2>   <p><strong>If you meet all the conditions set out in the minimum requirements</strong>, we will assess your application based on the selection factors in the federal skilled worker points grid.<sup id=\"fn1-rf\"><a class=\"fn-lnk\" href=\"#fn1\"><span class=\"wb-inv\">Footnote </span>1</a></sup></p>   <p>The selection factors are:</p>   <ul>     <li>your skills in English and/or French (Canada’s two official languages),</li>     <li>your education,</li>     <li>your work experience,</li>     <li>your age,</li>     <li>whether you have a valid job offer, and</li>     <li>your adaptability (how well you are likely to settle here).</li>   </ul>   <p>To see how many points you might get, <a href=\"/english/immigrate/skilled/apply-factors.asp\">read about the selection factors</a>.</p>   <p>If you have skilled work experience and want to live in Canada permanently, use our <a href=\"/ctc-vac/ee-start.asp\">Come to Canada tool</a> to see if you are eligible for the Express Entry pool.</p>",
+          "korean" : {
+            "-K_ubo37K3Ig5C6rMmEm" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974426,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<h2>Proof of funds</h2>   <p>You must show that you have enough <a href=\"/english/immigrate/skilled/funds.asp\">money to support yourself and your family</a> after you arrive in Canada, unless you:</p>   <ul>     <li>are currently able to legally work in Canada, and</li>     <li>have a <a href=\"/english/immigrate/skilled/offer.asp\">valid job offer</a> from an employer in Canada.</li>   </ul>",
+          "korean" : {
+            "-K_ubo37K3Ig5C6rMmEn" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974427,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<h2>Principal applicant</h2>   <p>If you are married or live with a common-law foreign national partner in Canada, and that person also meets the above conditions, you can decide which one of you will apply under Express Entry as a principal applicant.</p>   <p>A <a href=\"/english/helpcentre/glossary.asp#common_law_partner\">common-law partner</a> is a person who has lived with you in a conjugal relationship for at least one year. Common-law partner refers to both opposite-sex and same-sex couples.</p>   <p>Look at each selection factor and see which one of you is most likely to meet the eligibility requirements and earn the most points. That person should apply as the principal applicant.</p>",
+          "korean" : {
+            "-K_ubo38ImS50_fJljMK" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820974428,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph09" : {
+          "english" : "<h2>Other requirements</h2>   <ol>     <li>You must be admissible to Canada. <a href=\"/english/information/inadmissibility/index.asp\">Find out more about inadmissibility</a>.</li>     <li>You must plan to live outside the province of <a href=\"http://www.immigration-quebec.gouv.qc.ca/en/index.html\">Quebec</a>.</li>   </ol>   <p>If you have skilled work experience and want to live in Canada permanently, use our <a href=\"/ctc-vac/ee-start.asp\">Come to Canada tool</a> to see if you are eligible for the Express Entry pool.</p>",
+          "korean" : {
+            "-K_wEt6LV1Me9YdtuDBP" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483848258092,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph10" : {
+          "english" : "<aside class=\"wb-fnote\" role=\"note\">     <h3 id=\"fn\">Footnotes</h3>     <dl>       <dt>Footnote 1</dt>       <dd id=\"fn1\">         <p>These factors are part of a 100-point grid used to assess federal skilled workers. This means you earn points for how well you do in each of the six factors. The total points will show if you qualify for the Express Entry pool. The current pass mark is 67&nbsp;points.</p>         <p class=\"fn-rtn\"> <a href=\"#fn1-rf\"><span class=\"wb-inv\">Return to footnote </span>1<span class=\"wb-inv\"> referrer</span></a></p>       </dd>     </dl>   </aside>",
+          "korean" : {
+            "-K_wFD9tUK4-6mIuzI8k" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483848344329,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Home" : {
+      "link" : "http://www.cic.gc.ca/english/express-entry/",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>     <h2 id=\"cn-cont\">How Express Entry works</h2>    </header>    <section>      <p><strong>Note</strong>: We are updating the  Express Entry system:</p>      <ul>       <li>you can now earn additional points for study in Canada</li>       <li>a valid job offer now only needs to be for one year, and some  job offers no longer need an LMIA</li>       <li>the amount of points you get for a job offer has changed</li>       <li>you  now have 90 days to apply instead of 60.</li>     </ul>      <p><a href=\"http://www.cic.gc.ca/english/department/media/notices/2016-11-19.asp\">Find out more  about these changes</a> and how they may affect you.</p>",
+          "korean" : {
+            "-K_xAsUyLkDwevpCZJxe" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984210,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<p>Express Entry is used to manage applications for permanent residence under these federal economic immigration programs:</p>     <ul>       <li>the <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/apply-who.asp\">Federal Skilled Worker Program</a>,</li>       <li>the <a href=\"http://www.cic.gc.ca/english/immigrate/trades/apply-who.asp\">Federal Skilled Trades Program</a>, and</li>       <li>the <a href=\"http://www.cic.gc.ca/english/immigrate/cec/apply-who.asp\">Canadian Experience Class</a>.</li>     </ul>      <p>Provinces and territories can also recruit candidates from the Express Entry system through their <a href=\"http://www.cic.gc.ca/english/immigrate/provincial/index.asp\">Provincial Nominee Programs</a> to meet local labour market needs.</p>     <p><a href=\"http://www.cic.gc.ca/english/department/mi/index.asp\">Ministerial Instructions</a> set out the rules for governing the Express Entry application management system.</p>     <p>The Express Entry system has two steps:</p>",
+          "korean" : {
+            "-K_xAsV7fjkyGGC6gBsD" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984212,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h2 id=\"step1\">Step 1) Potential candidates complete an online Express Entry profile</h2>     <p>Potential candidates will complete an online <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/profile.asp\">Express Entry profile</a>. This is a secure form that they will use to provide information about their:</p>     <ul>       <li>skills, </li>       <li>work experience, </li>       <li>language ability, </li>       <li>education, and </li>       <li>other details that will help us assess them.</li>     </ul>",
+          "korean" : {
+            "-K_xAsV9fHFp_tkg1x8s" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984216,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<p>Those who meet the criteria of one of the federal immigration programs listed above will be accepted into a <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/pool.asp\">pool of candidates</a>.</p>     <p> Anyone who does not already have a <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/offer.asp\">job offer</a> supported by a&nbsp;<a href=\"http://www.cic.gc.ca/english/hire/offers.asp\">Labour Market Impact Assessment</a>&nbsp;(LMIA) (if you need one), or a nomination from a province or territory, must register with Employment and Social Development Canada’s (ESDC) Job Bank. Job Bank will help connect Express Entry candidates with eligible employers in Canada.</p>     <p>Candidates are also encouraged to promote themselves to employers in other ways, such as using job boards, recruiters etc.</p>      <p>For a job offer to be valid in Express Entry and  receive points, employers will usually need an LMIA from ESDC (<a href=\"http://www.cic.gc.ca/english/immigrate/skilled/exempt.asp\">there are a  few exceptions</a>).</p>      <p>There is no LMIA fee for permanent resident applications.</p>",
+          "korean" : {
+            "-K_xAsVCm5M8t98bxwYY" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984217,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<div class=\"alert alert-info\">       <p><strong>Note</strong>: If you meet the  entry criteria for the Express Entry pool, you are not guaranteed an invitation to apply for permanent residence. All applicants for permanent residence also need  to meet eligibility and admissibility requirements under Canada’s immigration  law (<em>Immigration and  Refugee Protection Act</em>).</p>     </div>",
+          "korean" : {
+            "-K_xAsVE2f-916Y0m5C5" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984218,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<h3 id=\"step2\">Step 2) The highest-ranking candidates in the pool will be invited to apply for permanent residence</h3>     <p>Candidates will be ranked against others in the pool using a point-based system called the <a href=\"http://www.cic.gc.ca/english/express-entry/criteria-crs.asp\">Comprehensive Ranking System</a>. Points are awarded using the information in their profile. </p>     <p>Candidates with the highest scores in the pool will be issued an <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/invitations.asp\">invitation to apply</a>. Candidates will be awarded points for:</p>     <ul>       <li>a job offer, and/or</li>       <li>a nomination from a province or territory, and/or</li>       <li>skills and experience factors.</li>     </ul>",
+          "korean" : {
+            "-K_xAsVGa8X__-Nktbv2" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984222,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<p>A candidate can get additional points for:</p>      <ul>       <li>qualifying education in Canada</li>       <li>a valid job offer or</li>       <li>a nomination by a province or territory</li>     </ul>      <p>These additional points can make a candidate rank high enough to be invited to apply at the next eligible round of invitations.</p>      <p>If someone is invited to apply, they will have 90 days to submit an online <a href=\"http://www.cic.gc.ca/english/immigrate/skilled/apply-how.asp\">application for permanent residence</a>.</p>",
+          "korean" : {
+            "-K_xAsVPa_PjJ4DnVt8k" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984228,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<p>Citizenship and Immigration Canada will process the majority of complete applications (meaning those with all the necessary supporting documents) in six months or less.</p>     <p>Candidates can stay in the pool for up to 12 months. If they do not get an invitation to apply for permanent residence within 12 months of submitting an Express Entry profile, they may submit a new profile. If they still meet the criteria, they can re-enter the pool. This will prevent backlogs and ensure quick processing times.</p>",
+          "korean" : {
+            "-K_xAsVTMd4nbQt8x_zh" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483863984229,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    },
+    "Prepare_for_your_arrival" : {
+      "link" : "http://www.cic.gc.ca/english/immigrate/skilled/arrival.asp",
+      "paragraphs" : {
+        "paragraph01" : {
+          "english" : "<header>   <h2 id=\"cn-cont\">Prepare for your arrival – Skilled immigrants (Express Entry)</h2> </header>   <h2>If you are already in Canada</h2>   <p>If you are granted permanent residence, we will contact you and let you know what to do next.</p>   <p> You may either contact us to make an appointment or go to a Canadian &ldquo;port of entry&rdquo; (border crossing), and present:</p>   <ul>  <li>your Confirmation of Permanent Residence (COPR) and/or your permanent resident visa. The officer will make sure all your documents are valid, and,</li>  <li>proof that you have the funds to support yourself and your family.</li>   </ul>",
+          "korean" : {
+            "-K_ubndv2MS-LMgUREJe" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972745,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph02" : {
+          "english" : "<p>The officer will ask you a few questions to make sure you still meet the terms to immigrate to Canada. They will be similar to the ones you answered when you applied. This should only take a few minutes.</p>   <p> The officer will also confirm your Canadian mailing address. We will mail you your permanent resident card at this address.</p>   <p> If you change your address within 180 days of getting your status, you must notify us using the <a href=\"https://services3.cic.gc.ca/ecas/?app=coanotify&amp;lang=en\">change your address tool</a>.</p>",
+          "korean" : {
+            "-K_ubndwMYFTh-O3B4wB" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972749,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph03" : {
+          "english" : "<h2>If you are outside Canada</h2>   <p>When you arrive in Canada, an officer from the&nbsp;<a href=\"http://www.cbsa-asfc.gc.ca/menu-eng.html\">Canada Border Services Agency</a> (CBSA) will greet you.</p>   <p>The officer will ask to see your passport and other travel documents. <strong>Do not pack these documents in your luggage. Keep them with you at all times.</strong> This will help speed up your entry to Canada.</p>",
+          "korean" : {
+            "-K_ubndwMYFTh-O3B4wC" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972753,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph04" : {
+          "english" : "<p> When you arrive, you must have:</p>   <ul>  <li>your valid passport and/or travel documents. Your passport must be a regular, private citizen passport. You cannot immigrate to Canada with a diplomatic, government service or public affairs passport.</li>  <li>your Confirmation of Permanent Residence (COPR) and/or your permanent resident visa. The officer will make sure you are entering Canada before or on the expiry date shown on your COPR. Please note that we cannot extend this document, so you should make sure to use it before it expires.</li>  <li>proof that you have the funds to support yourself and your family after you arrive in Canada.</li> </ul>",
+          "korean" : {
+            "-K_ubne2tkiNdXX2xLAR" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972754,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph05" : {
+          "english" : "<p>The officer will ask you a few questions to make sure you still meet the terms to immigrate to Canada. They will be similar to the ones you answered when you applied. This should only take a few minutes.</p>   <p> You will not be allowed into Canada if you: </p>   <ul>  <li>give false or incomplete information, or </li>  <li>do not convince the officer that you meet the conditions to enter Canada.</li> </ul>",
+          "korean" : {
+            "-K_ubne2tkiNdXX2xLAS" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972754,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph06" : {
+          "english" : "<p>If you are admissible and there are no problems when you arrive, the officer will allow you to enter Canada as a permanent resident. The officer will also confirm your Canadian mailing address. We will mail you your permanent resident card at this address.</p>   <p> If you change your address within 180 days of arriving in Canada, you must notify us using this <a href=\"https://services3.cic.gc.ca/ecas/?app=coanotify&amp;lang=en\">online tool</a>.</p>",
+          "korean" : {
+            "-K_ubne3eYL0cI3Nk83q" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972755,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph07" : {
+          "english" : "<h2>Disclosure of funds </h2>   <p>If you <a href=\"http://www.cbsa-asfc.gc.ca/travel-voyage/ttd-vdd-eng.html\">arrive in Canada with more than CAN$10,000</a>, you must tell this to the CBSA officer. If you do not, you could be fined, and your funds could be seized. These funds could be in the form of:</p>   <ul>  <li>cash,</li>  <li>securities that belong to you (for example, stocks, bonds, debentures, treasury bills), or</li>  <li>bankers&rsquo; drafts, cheques, travellers&rsquo; cheques or money orders. </li>   </ul>",
+          "korean" : {
+            "-K_ubne42l9tMsJzkhbV" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972756,
+              "user" : "admin"
+            }
+          }
+        },
+        "paragraph08" : {
+          "english" : "<h2>What you can bring into Canada </h2>   <p>Before you travel to Canada, see the <a href=\"http://www.cbsa-asfc.gc.ca/comm-eng.html#_s3\">CBSA&nbsp;website</a> to find out what you can and cannot bring into the country.</p>",
+          "korean" : {
+            "-K_ubne5BwEv3msecht8" : {
+              "content" : "please translate :)",
+              "faultyCount" : 0,
+              "timestamp" : 1483820972758,
+              "user" : "admin"
+            }
+          }
+        }
+      }
+    }
+  },
+  "bannedUsers" : {
+    "123123123123" : "dsf@sf.com"
+  },
+  "snoopi" : "https://api.snoopi.io/v1/?apikey=ff84bb6c09e8c115fce670e7ac2dc5761328045674b1a0bd1f8619e7872401cd",
+  "users" : {
+    "0E7culXypcRT3MBc9syiqXdW5RJ2" : {
+      "count" : 7,
+      "email" : "nackyu711@gmail.com",
+      "ipaddress" : "965021107",
+      "recentDate" : 20170108
+    },
+    "NBlljYWaxGMVX6SieQmprs6nsJt1" : {
+      "count" : 8,
+      "ipaddress" : "965021107",
+      "recentDate" : 20170108
+    },
+    "R9SuG9Kyz1WTW6PnlW3Ml3HAZrZ2" : {
+      "count" : 9,
+      "ipaddress" : "965021107",
+      "recentDate" : 20170108
+    }
+  }
+}

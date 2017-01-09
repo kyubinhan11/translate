@@ -1,4 +1,14 @@
 (function () {
+	Date.prototype.yyyymmdd = function() {
+		var mm = this.getMonth() + 1; // getMonth() is zero-based
+		var dd = this.getDate();
+
+		return [this.getFullYear(),
+						(mm>9 ? '' : '0') + mm,
+						(dd>9 ? '' : '0') + dd
+					 ].join('');
+	};
+
 	// Initialize Firebase
 	var config = {
 		apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
@@ -12,13 +22,13 @@
 	// define our app and dependencies ngSanitize is for rendering HTML in ng-repeat
 	angular.module("mainApp", ["firebase", "ngSanitize", "ui.router"])
 	.controller("MainController", MainController)
-	.filter('startFrom', function() {
+	.filter('startFrom', function() {  // this is for filtering second ng-repeat
     return function(input, start) {
         start = +start; //parse to int
         return input.slice(start);
     }
 	})
-	.directive('dirNav', function () {
+	.directive('dirNav', function () {  // custum nav tag
 	  var ddo = {
 	    templateUrl: 'template/dir-nav.html'
 	  };
@@ -40,7 +50,7 @@
 		// console.log(path);  // ex ["ExpressEntry", "Home"]
 		var concatenatedPath = "";
 
-		for (each of path) {
+		for (var each of path) {
 			concatenatedPath += each + "/";
 		} // ex "ExpressEntry/Home/";
 
@@ -50,7 +60,7 @@
 
 		service.getPath = function(){
 			var con= "";
-			for (each of path) {
+			for (var each of path) {
 				con += each.replace(/_/g, " ") + " > ";
 			}
 			return con.slice(0, con.length-2);
@@ -85,10 +95,15 @@
 			return $firebaseArray(ref);
 		}
 
+		service.getUsers = function () {
+			var ref = firebase.database().ref().child("users");
+			return $firebaseObject(ref);
+		}
+
 		service.getArrayofTranslations = function(){
 			var array = [];
 			var ref, query;
-			// para01, para02, ''' para10, para11,
+			// paragraph01, paragraph02, ''' paragraph10, paragraph11,
 			for (var index = 1; index< 1 + numOfPara; index++){
 				if(index < 10){
 					ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph0" + index + "/"+ language);
@@ -112,8 +127,13 @@
 		const cutoffFaultyCount = 9;
 		const admin = "0E7culXypcRT3MBc9syiqXdW5RJ2";
 		const language = "korean";
+		const numOfDailyCount = 10;
 		// TESTINGFORKEVIN.TK translatetogetherCIC.com
 
+
+
+
+		// console.log(new Date().yyyymmdd());
 		// mainCtrl.EEHomeService = ParasAndArrayOfTransFactory(["ExpressEntry", "Home"], "korean", 8);
 		// mainCtrl.EEFederalSkilledWorkersService = ParasAndArrayOfTransFactory(["ExpressEntry", "Federal skilled workers"], "korean", 8);
 		// setValuesForController(mainCtrl, mainCtrl.EEFederalSkilledWorkersService);
@@ -159,25 +179,47 @@
 					// if user logged in
 					if(mainCtrl.firebaseUser)	{
 						  // console.log(Object.values(mainCtrl.bannedUsers));
-							// console.log("are you a bad user?", mainCtrl.firebaseUser.uid);
 
-							// mainCtrl.userIpaddress = "123.123.123.123";
-							// if our ip address finder works just fine it will ban bad users
-							if (mainCtrl.userIpaddress) {
-										// ex 123.123.123.123 -> 123123123123
-										mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
-										// console.log("are you a bad user?", mainCtrl.bannedUsers[mainCtrl.userIpaddress]);
-										// if this user's ipaddress is not in the bannedUsers object then add translation
-										if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress]){
-												// calling $add on a synchronized array is like Array.push(),
-												// except that it saves the changes to our database!
+							// update the number of daily count that is assigned to each users
+							var currentDate = parseInt(new Date().yyyymmdd());
+							mainCtrl.updateDailyCount(mainCtrl.users, mainCtrl.firebaseUser, currentDate);
+
+							if (mainCtrl.users[mainCtrl.firebaseUser.uid].count >= 0) {
+									// mainCtrl.userIpaddress = "123.123.123.123";
+									// if our ip address finder works just fine
+									if (mainCtrl.userIpaddress) {
+												// ex 123.123.123.123 -> 123123123123
+												mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
+
+												// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
+												if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress]){
+														// calling $add on a synchronized array is like Array.push(),
+														// except that it saves the changes to our database!
+														translationsRef.$add({
+															user: mainCtrl.user,
+															userIpaddress : mainCtrl.userIpaddress,
+															faultyCount: 0,
+															userUid: mainCtrl.firebaseUser.uid,
+															// each paragraphs get assigned different textareas and content
+															// by having index, content will be added in the right firebaseArray
+															content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
+															timestamp: firebase.database.ServerValue.TIMESTAMP
+														});
+
+														// reset the message input
+														mainCtrl.content[index] = "";
+
+												}
+								 	} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
+												// but if Ipfinder isn't working, I will look up the uids that were also saved in bannedUsers
+												// so I can still keep these users from sabotaging
 												translationsRef.$add({
 													user: mainCtrl.user,
-													userIpaddress : mainCtrl.userIpaddress,
+													userIpaddress : "stupid ipfinder is not working",
 													faultyCount: 0,
-													userUid: mainCtrl.firebaseUser.uid,
 													// each paragraphs get assigned different textareas and content
 													// by having index, content will be added in the right firebaseArray
+													userUid: mainCtrl.firebaseUser.uid,
 													content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
 													timestamp: firebase.database.ServerValue.TIMESTAMP
 												});
@@ -185,45 +227,62 @@
 												// reset the message input
 												mainCtrl.content[index] = "";
 
-										}
-						 	} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
-										// but if Ipfinder isn't working, I will look up the uids that were saved in the array of bannedUsers
-										// so I can still keep these users from sabotaging
-										translationsRef.$add({
-											user: mainCtrl.user,
-											userIpaddress : "stupid ipfinder is not working",
-											faultyCount: 0,
-											// each paragraphs get assigned different textareas and content
-											// by having index, content will be added in the right firebaseArray
-											userUid: mainCtrl.firebaseUser.uid,
-											content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
-											timestamp: firebase.database.ServerValue.TIMESTAMP
-										});
 
-										// reset the message input
-										mainCtrl.content[index] = "";
+								 	} // end of else if
 
+									/* end of if statement for count*/
+							 }	else { $window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection"); }
 
-						 	} // end of else if
+							 /* end of if user logged in */
+				    }  else{ $window.alert("You need to log in!"); }
 
-
-				    } // end of if user logged in
-				    else{
-				    	alert("You need to log in!");
-				    }
-		    }
-		    else{
-		    	alert("you ain't write anything");
-		    }
+		    } else{ $window.alert("you ain't write anything"); }
 
 		};
+
+		// update the number of daily count that is assigned to each users
+		mainCtrl.updateDailyCount = function (users, firebaseUser, currentDate) {
+			var uid = firebaseUser.uid;
+
+			// if this is the first time for user to translate
+			// create a firebaseObject that contains count. recentDate, email if it exist.
+			if (!users[uid]) {
+				users[uid] = {
+					count : numOfDailyCount,
+					recentDate : currentDate
+				};
+
+				if (firebaseUser.email) users[uid].email = firebaseUser.email;
+				if (mainCtrl.userIpaddress) users[uid].ipaddress = mainCtrl.userIpaddress.replace(/\./g, "");
+			}
+			// console.log(users[mainCtrl.uid]);
+			// update the recentDate to the current and count
+			if (users[uid].recentDate != currentDate) {
+				users[uid].recentDate = currentDate;
+				users[uid].count = numOfDailyCount;
+			}
+			users[uid].count--;
+			// console.log(mainCtrl.users[mainCtrl.firebaseUser.uid].count);
+			// save the change
+			users.$save();
+		}
 
 		// triggered when clicking 'translate' button to show user's IP address
 		// and tell them they need to log in first to save what they write
 		mainCtrl.createUserIpaddress = function(){
 			if(!mainCtrl.firebaseUser){
-				alert("you need to log in to save your translation");
+				$window.alert("you need to log in to save your translation");
 			}
+			else {
+				var currentDate = parseInt(new Date().yyyymmdd());
+				if(mainCtrl.users[mainCtrl.firebaseUser.uid]){
+					if (mainCtrl.users[mainCtrl.firebaseUser.uid].count <= 0 ){
+							$window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection");
+					}
+				}
+			}
+
+
 			  // geoplugin.com https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only?page=1&tab=votes#tab-top
 		    $http.get('https://freegeoip.net/json/?callback=')
 		    .then(function(response) {
@@ -272,7 +331,7 @@
 				translationsRef.$save(translation);
 
 			} else{
-				alert('please log in first!');
+				$window.alert('please log in first!');
 			}
 		};
 
@@ -285,7 +344,7 @@
 		};
 
 		mainCtrl.alert = function(text){
-			alert(text);
+			$window.alert(text);
 		};
 
 		mainCtrl.reload = function() {
@@ -367,6 +426,8 @@
 
 		// for title in HTML
 		controller.title = service.getTitle();
+
+		controller.users = service.getUsers();
 	};
 
 	// initialize controller.theNumberOfEachTranslations and fill the black translations with default values
@@ -381,14 +442,14 @@
 				// console.log(translations.length);  // translations is a FirebaseArray
 
 				// fill the black translations with default values
-				if(translations.length === 0){
-					translations.$add({
-						user: "admin",
-		      			content: "please translate :)",
-		      			timestamp: firebase.database.ServerValue.TIMESTAMP,
-		      			faultyCount: 0
-					});
-				}
+				// if(translations.length === 0){
+				// 	translations.$add({
+				// 		user: "admin",
+		    //   			content: "please translate :)",
+		    //   			timestamp: firebase.database.ServerValue.TIMESTAMP,
+		    //   			faultyCount: 0
+				// 	});
+				// }
 
 				// upload the latest content(translation) in each textareas of each paragraphs
 				// latestTranslation.content contains <br> so we need to replace it with '\n'
