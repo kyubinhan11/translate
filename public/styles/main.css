@@ -2,3 +2,13 @@ div.highlighted:hover {
   color: black;
   background-color: #ddd ;
 }
+
+.topPadding {
+  padding-top: 10px
+}
+
+h2, h3, h4, h5{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0.3em;
+}

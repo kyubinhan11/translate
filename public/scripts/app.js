@@ -10,19 +10,19 @@
 	};
 
 	// Initialize Firebase
-	var config = {
-		apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
-		authDomain: "canadaforum-18020.firebaseapp.com",
-		databaseURL: "https://canadaforum-18020.firebaseio.com",
-		storageBucket: "canadaforum-18020.appspot.com",
-		messagingSenderId: "496860594601"
-	};
-	firebase.initializeApp(config);
+  var config = {
+    apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
+    authDomain: "canadaforum-18020.firebaseapp.com",
+    databaseURL: "https://canadaforum-18020.firebaseio.com",
+    storageBucket: "canadaforum-18020.appspot.com",
+    messagingSenderId: "496860594601"
+  };
+  firebase.initializeApp(config);
 
 	// define our app and dependencies ngSanitize is for rendering HTML in ng-repeat
 	angular.module("mainApp", ["firebase", "ngSanitize", "ui.router"])
 	.controller("MainController", MainController)
-	.filter('startFrom', function() {  // this is for filtering second ng-repeat
+	.filter('startFrom', function() {  // this is for filtering translations in second ng-repeat
     return function(input, start) {
         start = +start; //parse to int
         return input.slice(start);
@@ -58,12 +58,13 @@
 			return numOfPara;
 		}
 
+		// for users to tell where they are
 		service.getPath = function(){
 			var con= "";
 			for (var each of path) {
 				con += each.replace(/_/g, " ") + " > ";
 			}
-			return con.slice(0, con.length-2);
+			return con.slice(0, con.length-2); // remove '>' and space at the end
 		}
 
 		service.getTitle = function () {
@@ -81,6 +82,11 @@
 
 		service.getLink = function(){
 			var ref = firebase.database().ref().child(concatenatedPath +"link");
+			return $firebaseObject(ref);
+		}
+
+		service.getDateModified = function () {
+			var ref = firebase.database().ref().child(concatenatedPath + "dateModified");
 			return $firebaseObject(ref);
 		}
 
@@ -103,7 +109,7 @@
 		service.getArrayofTranslations = function(){
 			var array = [];
 			var ref, query;
-			// paragraph01, paragraph02, ''' paragraph10, paragraph11,
+			// paragraph01, paragraph02, ... paragraph10, paragraph11,
 			for (var index = 1; index< 1 + numOfPara; index++){
 				if(index < 10){
 					ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph0" + index + "/"+ language);
@@ -128,8 +134,20 @@
 		const admin = "0E7culXypcRT3MBc9syiqXdW5RJ2";
 		const language = "korean";
 		const numOfDailyCount = 10;
-		// TESTINGFORKEVIN.TK translatetogetherCIC.com
 
+		/* AUTHENTIFICATION */
+		mainCtrl.auth = $firebaseAuth();
+		mainCtrl.adminId = admin;
+		// any time auth state changes, add the user data to scope
+		mainCtrl.auth.$onAuthStateChanged(function(firebaseUser) {
+				mainCtrl.firebaseUser = firebaseUser;
+				// console.log(mainCtrl.firebaseUser);
+				if(firebaseUser){
+					mainCtrl.user = firebaseUser.displayName;
+				}else{
+					mainCtrl.user = "Guest " + Math.round(Math.random() * 100);
+				}
+		});
 
 
 
@@ -141,7 +159,7 @@
 
 
 		// arrayOfPath is from ui-router
-		var path = arrayOfPath.slice(0, arrayOfPath.length-1); // the last element in this array is the number of Paragraphs
+		var path = arrayOfPath.slice(0, arrayOfPath.length-1); // the last element of this array is the number of Paragraphs
 		mainCtrl.mainService = ParasAndArrayOfTransFactory(path, language, arrayOfPath[arrayOfPath.length-1]);
 
 		// it initializes mainCtrl.paragraphs, mainCtrl.numOfParagraphs, mainCtrl.userIpaddress
@@ -151,21 +169,6 @@
 		// initialize mainCtrl.theNumberOfEachTranslations and fill the black translations with default values
 		// and upload the latest content(translation) in each textareas of each paragraphs
 		loadValuesFromFirebaseArrays(mainCtrl, mainCtrl.mainService);
-
-
-		/* AUTHENTIFICATION */
-		mainCtrl.auth = $firebaseAuth();
-		mainCtrl.adminId = admin;
-		// any time auth state changes, add the user data to scope
-    mainCtrl.auth.$onAuthStateChanged(function(firebaseUser) {
-        mainCtrl.firebaseUser = firebaseUser;
-        // console.log(mainCtrl.firebaseUser);
-        if(firebaseUser){
-        	mainCtrl.user = firebaseUser.displayName;
-        }else{
-        	mainCtrl.user = "Guest " + Math.round(Math.random() * 100);
-        }
-    });
 
 
 
@@ -180,9 +183,9 @@
 					if(mainCtrl.firebaseUser)	{
 						  // console.log(Object.values(mainCtrl.bannedUsers));
 
-							// update the number of daily count that is assigned to each users
+							// create or update the number of daily count that is assigned to each users
 							var currentDate = parseInt(new Date().yyyymmdd());
-							mainCtrl.updateDailyCount(mainCtrl.users, mainCtrl.firebaseUser, currentDate);
+							mainCtrl.updateDailyCount(currentDate, mainCtrl.content[index]);
 
 							if (mainCtrl.users[mainCtrl.firebaseUser.uid].count >= 0) {
 									// mainCtrl.userIpaddress = "123.123.123.123";
@@ -192,7 +195,7 @@
 												mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
 
 												// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
-												if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress]){
+												if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress] && !mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]){
 														// calling $add on a synchronized array is like Array.push(),
 														// except that it saves the changes to our database!
 														translationsRef.$add({
@@ -241,18 +244,20 @@
 		};
 
 		// update the number of daily count that is assigned to each users
-		mainCtrl.updateDailyCount = function (users, firebaseUser, currentDate) {
-			var uid = firebaseUser.uid;
+		mainCtrl.updateDailyCount = function (currentDate, content) {
+			var uid = mainCtrl.firebaseUser.uid;
+			var users = mainCtrl.users;
 
 			// if this is the first time for user to translate
 			// create a firebaseObject that contains count. recentDate, email if it exist.
 			if (!users[uid]) {
 				users[uid] = {
 					count : numOfDailyCount,
-					recentDate : currentDate
+					recentDate : currentDate,
+					contribution : 10,
+					content : [content]
 				};
-
-				if (firebaseUser.email) users[uid].email = firebaseUser.email;
+				if (mainCtrl.firebaseUser.email) users[uid].email = mainCtrl.firebaseUser.email;
 				if (mainCtrl.userIpaddress) users[uid].ipaddress = mainCtrl.userIpaddress.replace(/\./g, "");
 			}
 			// console.log(users[mainCtrl.uid]);
@@ -261,8 +266,10 @@
 				users[uid].recentDate = currentDate;
 				users[uid].count = numOfDailyCount;
 			}
+			users[uid].contribution += 10;
 			users[uid].count--;
-			// console.log(mainCtrl.users[mainCtrl.firebaseUser.uid].count);
+			users[uid].content.push(content);
+			// console.log(mainCtrl.users[mainCtrl.firebaseUser.uid]);
 			// save the change
 			users.$save();
 		}
@@ -276,19 +283,20 @@
 			else {
 				var currentDate = parseInt(new Date().yyyymmdd());
 				if(mainCtrl.users[mainCtrl.firebaseUser.uid]){
+					// if users translate more than the number of daily count
 					if (mainCtrl.users[mainCtrl.firebaseUser.uid].count <= 0 ){
 							$window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection");
 					}
 				}
-			}
+			} // end of else
 
 
-			  // geoplugin.com https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only?page=1&tab=votes#tab-top
-		    $http.get('https://freegeoip.net/json/?callback=')
-		    .then(function(response) {
-		        mainCtrl.userIpaddress = response.data["ip"];
-		        // console.log(response.data["ip"]);
-		    }).catch(function(error){
+		  // get the user's ipaddress from geoplugin.com https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only?page=1&tab=votes#tab-top
+	    $http.get('https://freegeoip.net/json/?callback=')
+	    .then(function(response) {
+	        mainCtrl.userIpaddress = response.data["ip"];
+	        // console.log(response.data["ip"]);
+	    }).catch(function(error){
 				console.log("geoplugin is not working", error.message);
 			});
 		};
@@ -389,7 +397,7 @@
 			}
 		};
 
-	}; // end of ParenetController
+	}; // end of MainController
 
 
 	// it initializes controller.paragraphs, controller.numOfParagraphs, controller.userIpaddress
@@ -407,6 +415,9 @@
 
 		// set link that is retrieved from the database
 		controller.link = service.getLink();
+
+		// set date modified for each pages
+		controller.dateModified = service.getDateModified();
 
 		// set fake array of the number of each translations(firebaseArray) [10, 10, 10, ...]
 		// as a default then loadValuesFromFirebaseArrays() will upload the real one
@@ -428,6 +439,7 @@
 		controller.title = service.getTitle();
 
 		controller.users = service.getUsers();
+
 	};
 
 	// initialize controller.theNumberOfEachTranslations and fill the black translations with default values

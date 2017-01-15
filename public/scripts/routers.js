@@ -24,21 +24,21 @@ function RoutesConfig($stateProvider, $urlRouterProvider) {
       }]
     }
   })
-  // .state('twoParameters', {
-  //   url: '/{category}/{numOfPara}',
-  //   templateUrl: 'template/mainContents.template.html',
-  //   controller: 'MainController as mainCtrl',
-  //   resolve: {
-  //     arrayOfPath: ['$stateParams',
-  //           function ($stateParams) {
-  //             // console.log([$stateParams.category, parseInt($stateParams.numOfPara)]);
-  //             // return ["ExpressEntry", "Home"];
-  //             // return [$stateParams.category, $stateParams.para1];
-  //             return [$stateParams.category, parseInt($stateParams.numOfPara)];
-  //
-  //           }]
-  //   }
-  // })
+  .state('twoParameters', {
+    url: '/{category}/{numOfPara}',
+    templateUrl: 'template/mainContents.template.html',
+    controller: 'MainController as mainCtrl',
+    resolve: {
+      arrayOfPath: ['$stateParams',
+            function ($stateParams) {
+              // console.log([$stateParams.category, parseInt($stateParams.numOfPara)]);
+              // return ["ExpressEntry", "Home"];
+              // return [$stateParams.category, $stateParams.para1];
+              return [$stateParams.category, parseInt($stateParams.numOfPara)];
+
+            }]
+    }
+  })
   .state('threeParameters', {
     url: '/{category}/{para1}/{numOfPara}',
     templateUrl: 'template/mainContents.template.html',

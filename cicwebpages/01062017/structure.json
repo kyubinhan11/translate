@@ -1,0 +1,63 @@
+ExpressEntry
+  Home http://www.cic.gc.ca/english/express-entry/ no need
+    href="#!/ExpressEntry/Home/8"
+
+  Become_a_candidate python: immigrate/skilled/candidate.asp  no need
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', numOfPara: 6})\"
+    href="#!/ExpressEntry/Become_a_candidate/6"
+
+  - Who_can_apply python: immigrate/skilled/apply-who-express.asp
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'Who_can_apply\\', numOfPara: 6})\"
+    href=\"/english/immigrate/skilled/apply-who-express.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/Who_can_apply/6\"
+
+  - Submit_your_profile  immigrate/skilled/profile.asp
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'Submit_your_profile\\', numOfPara: 18})\"
+    href=\"/english/immigrate/skilled/profile.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/Submit_your_profile/18\"
+
+
+  - How_the_pool_works  immigrate/skilled/pool.asp
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'How_the_pool_works\\', numOfPara: 8})\"
+    href=\"/english/immigrate/skilled/pool.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/How_the_pool_works/8\"
+
+
+  - Understand_the_ranking_system
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'Understand_the_ranking_system\\', numOfPara: 7})\"
+    href=\"/english/express-entry/criteria-crs.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/Understand_the_ranking_system/7\"
+
+  - Rounds_of_invitations
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'Rounds_of_invitations\\', numOfPara: 6})\"
+    href=\"/english/express-entry/rounds.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/Rounds_of_invitations/6\"
+
+  - Invitations_to_apply
+    ui-sref=\"fourParameters({category:\\'ExpressEntry\\', para1:\\'Become_a_candidate\\', para2:\\'Invitations_to_apply\\', numOfPara: 11})\"
+    href=\"/english/immigrate/skilled/invitations.asp\"
+    href=\"#!/ExpressEntry/Become_a_candidate/Invitations_to_apply/11\"
+
+  After_you_apply python: immigrate/skilled/next_steps.asp  no need
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'After_you_apply\\', numOfPara: 10})\"
+    href=\"#!/ExpressEntry/After_you_apply/10\"
+
+  Prepare_for_your_arrival python: immigrate/skilled/arrival.asp  no need to replace
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'Prepare_for_your_arrival\\', numOfPara: 8})\"
+    href=\"#!/ExpressEntry/Prepare_for_your_arrival/8\"
+
+  Federal_skilled_workers python: immigrate/skilled/apply-who.asp
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'Federal_skilled_workers\\', numOfPara: 10})\"
+    href=\"/english/immigrate/skilled/apply-who.asp\"
+    href=\"#!/ExpressEntry/Federal_skilled_workers/10\"
+
+  Federal_skilled_trades python: immigrate/trades/apply-who.asp
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'Federal_skilled_trades\\', numOfPara: 14})\"
+    href=\"/english/immigrate/trades/apply-who.asp\"
+    href=\"#!/ExpressEntry/Federal_skilled_trades/14\"
+
+
+  Canadian_experience_class http://www.cic.gc.ca/english/immigrate/cec/apply-who.asp
+    ui-sref=\"threeParameters({category:\\'ExpressEntry\\', para1:\\'Canadian_experience_class\\', numOfPara: 10})\"
+    href=\"/english/immigrate/cec/apply-who.asp\"
+    href=\"#!/ExpressEntry/Canadian_experience_class/10\"

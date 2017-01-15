@@ -1,7 +1,7 @@
 {
   "rules" :{
-	  ".read":true,
-    ".write":true
+	  ".read": true,
+    ".write": "auth != null"
   }
 }
 
@@ -17,4 +17,3 @@
 //     }
 //   }
 // } //we can grant everyone read access to all data, but only write access to their own data
-  

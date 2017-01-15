@@ -4,13 +4,17 @@ FEATURES.
   it has AUTHENTIFICATION with Twitter, Facebook, Google Auth
   it is built with AngularJS for binding javascript and html with a couple of nice features such as ui-router
   it can report faulty translation and if it reaches a certain number the user will be banned
-  users can navigate individual translations attached to its paragraph using pagination
-  administer can delete translations or ban users right away with buttons on the webpage
-  maintains user histories to protect website
+  users can navigate individual translations attached to its paragraph with pagination
+  administer can delete translations or ban users with buttons on the webpage
+  it maintains User history to protect website (users get to translate 10 times a day)
 
 SETTINGS.
-  It will reload everytime users save translations or admin delete translations
+  It will reload everytime users save translations
   users can only write after logging in
 
 
 TODO
+  href="/english/immigrate/cec/apply-who.asp"  ->   href=\"#!/ExpressEntry/Canadian_experience_class/10\"
+  using router and dictionary in python
+
+  I need to minify app.js file and remove it when deploying
