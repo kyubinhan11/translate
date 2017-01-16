@@ -1,131 +1,131 @@
 (function () {
 	Date.prototype.yyyymmdd = function() {
-		var mm = this.getMonth() + 1; // getMonth() is zero-based
-		var dd = this.getDate();
+	var mm = this.getMonth() + 1; // getMonth() is zero-based
+	var dd = this.getDate();
 
-		return [this.getFullYear(),
-						(mm>9 ? '' : '0') + mm,
-						(dd>9 ? '' : '0') + dd
-					 ].join('');
+	return [this.getFullYear(),
+		(mm>9 ? '' : '0') + mm,
+		(dd>9 ? '' : '0') + dd
+		].join('');
 	};
 
 	// Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
-    authDomain: "canadaforum-18020.firebaseapp.com",
-    databaseURL: "https://canadaforum-18020.firebaseio.com",
-    storageBucket: "canadaforum-18020.appspot.com",
-    messagingSenderId: "496860594601"
-  };
-  firebase.initializeApp(config);
+    var config = {
+	    apiKey: "AIzaSyDUid3Hb5DOI0gql4OoTaMloFLEoP10AV4",
+	    authDomain: "canadaforum-18020.firebaseapp.com",
+	    databaseURL: "https://canadaforum-18020.firebaseio.com",
+	    storageBucket: "canadaforum-18020.appspot.com",
+	    messagingSenderId: "496860594601"
+    };
+    firebase.initializeApp(config);
 
 	// define our app and dependencies ngSanitize is for rendering HTML in ng-repeat
-	angular.module("mainApp", ["firebase", "ngSanitize", "ui.router"])
-	.controller("MainController", MainController)
-	.filter('startFrom', function() {  // this is for filtering translations in second ng-repeat
-    return function(input, start) {
-        start = +start; //parse to int
-        return input.slice(start);
-    }
-	})
-	.directive('dirNav', function () {  // custum nav tag
+    angular.module("mainApp", ["firebase", "ngSanitize", "ui.router"])
+    .controller("MainController", MainController)
+    .filter('startFrom', function() {  // this is for filtering translations in second ng-repeat
+    	return function(input, start) {
+        	start = +start; //parse to int
+        	return input.slice(start);
+        }
+     })
+     .directive('dirNav', function () {  // custum nav tag
 	  var ddo = {
 	    templateUrl: 'template/dir-nav.html'
 	  };
 	  return ddo;
-	})
-	.factory('ParasAndArrayOfTransFactory', ["$firebaseObject", "$firebaseArray",
+     })
+     .factory('ParasAndArrayOfTransFactory', ["$firebaseObject", "$firebaseArray",
 		function($firebaseObject, $firebaseArray){
 			return function(path, language, numOfPara) {
 				return new ParasAndArrayOfTransService($firebaseObject, $firebaseArray, path, language, numOfPara);
 			}
 		}
-	]);
+     ]);
 
 
-	function ParasAndArrayOfTransService($firebaseObject, $firebaseArray, path, language, numOfPara) {
+     function ParasAndArrayOfTransService($firebaseObject, $firebaseArray, path, language, numOfPara) {
 
-		var service = this;
+	var service = this;
 
-		// console.log(path);  // ex ["ExpressEntry", "Home"]
-		var concatenatedPath = "";
+	// console.log(path);  // ex ["ExpressEntry", "Home"]
+	var concatenatedPath = "";
 
+	for (var each of path) {
+		concatenatedPath += each + "/";
+	} // ex "ExpressEntry/Home/";
+
+	service.getNumOfPara = function(){
+		return numOfPara;
+	}
+
+	// for users to tell where they are
+	service.getPath = function(){
+		var con= "";
 		for (var each of path) {
-			concatenatedPath += each + "/";
-		} // ex "ExpressEntry/Home/";
-
-		service.getNumOfPara = function(){
-			return numOfPara;
+			con += each.replace(/_/g, " ") + " > ";
 		}
+		return con.slice(0, con.length-2); // remove '>' and space at the end
+	}
 
-		// for users to tell where they are
-		service.getPath = function(){
-			var con= "";
-			for (var each of path) {
-				con += each.replace(/_/g, " ") + " > ";
+	service.getTitle = function () {
+		return path[path.length-1].replace(/_/g, " ");
+	}
+
+	// default value as [10, 10, 10, ...]
+	service.theNumberOfEachTranslations = function(){
+		var array = [];
+		for (var i = 0; i < numOfPara; i++) {
+			array.push(10);
+		}
+		return array;
+	}
+
+	service.getLink = function(){
+		var ref = firebase.database().ref().child(concatenatedPath +"link");
+		return $firebaseObject(ref);
+	}
+
+	service.getDateModified = function () {
+		var ref = firebase.database().ref().child(concatenatedPath + "dateModified");
+		return $firebaseObject(ref);
+	}
+
+	service.getBannedUsers = function() {
+		var ref = firebase.database().ref("bannedUsers");
+		return $firebaseObject(ref);
+	}
+
+
+	service.getParagraphs = function(){
+		var ref = firebase.database().ref().child(concatenatedPath + "paragraphs");
+		return $firebaseArray(ref);
+	}
+
+	service.getUsers = function () {
+		var ref = firebase.database().ref().child("users");
+		return $firebaseObject(ref);
+	}
+
+	service.getArrayofTranslations = function(){
+		var array = [];
+		var ref, query;
+		// paragraph01, paragraph02, ... paragraph10, paragraph11,
+		for (var index = 1; index< 1 + numOfPara; index++){
+			if(index < 10){
+				ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph0" + index + "/"+ language);
+				query = ref.orderByChild("timestamp").limitToLast(10);
+				array.push($firebaseArray(query));
+			} else{
+				ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph" + index + "/"+ language);
+				query = ref.orderByChild("timestamp").limitToLast(10);
+				array.push($firebaseArray(query));
 			}
-			return con.slice(0, con.length-2); // remove '>' and space at the end
 		}
-
-		service.getTitle = function () {
-			return path[path.length-1].replace(/_/g, " ");
-		}
-
-		// default value as [10, 10, 10, ...]
-		service.theNumberOfEachTranslations = function(){
-			var array = [];
-			for (var i = 0; i < numOfPara; i++) {
-				array.push(10);
-			}
-			return array;
-		}
-
-		service.getLink = function(){
-			var ref = firebase.database().ref().child(concatenatedPath +"link");
-			return $firebaseObject(ref);
-		}
-
-		service.getDateModified = function () {
-			var ref = firebase.database().ref().child(concatenatedPath + "dateModified");
-			return $firebaseObject(ref);
-		}
-
-		service.getBannedUsers = function() {
-			var ref = firebase.database().ref("bannedUsers");
-			return $firebaseObject(ref);
-		}
-
-
-		service.getParagraphs = function(){
-			var ref = firebase.database().ref().child(concatenatedPath + "paragraphs");
-			return $firebaseArray(ref);
-		}
-
-		service.getUsers = function () {
-			var ref = firebase.database().ref().child("users");
-			return $firebaseObject(ref);
-		}
-
-		service.getArrayofTranslations = function(){
-			var array = [];
-			var ref, query;
-			// paragraph01, paragraph02, ... paragraph10, paragraph11,
-			for (var index = 1; index< 1 + numOfPara; index++){
-				if(index < 10){
-					ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph0" + index + "/"+ language);
-					query = ref.orderByChild("timestamp").limitToLast(10);
-					array.push($firebaseArray(query));
-				} else{
-					ref = firebase.database().ref().child(concatenatedPath + "paragraphs" + "/paragraph" + index + "/"+ language);
-					query = ref.orderByChild("timestamp").limitToLast(10);
-					array.push($firebaseArray(query));
-				}
-			}
-			// console.log(array);
-			return array;
-		};
-
+		// console.log(array);
+		return array;
 	};
+
+     };
 
 	MainController.$inject = ["arrayOfPath", "$window", "$http", "$firebaseAuth", "ParasAndArrayOfTransFactory"]
 	function MainController(arrayOfPath, $window, $http, $firebaseAuth, ParasAndArrayOfTransFactory){
@@ -173,7 +173,7 @@
 
 
 		// triggerd when clicking 'save' button to save the translation
-	  // add translations to firebase (triggered by the save button)
+	        // add translations to firebase (triggered by the save button)
 		mainCtrl.addTranslation = function(translationsRef, index){
 			// console.log(mainCtrl.content[index]);
 
