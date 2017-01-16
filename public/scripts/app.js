@@ -174,50 +174,51 @@
 
 		// create an object of a translation for addTranslation method
 		mainCtrl.createTransObj = function (index) {
-				var obj = {
-					user: mainCtrl.user,
-					userIpaddress : mainCtrl.userIpaddress,
-					faultyCount: 0,
-					userUid: mainCtrl.firebaseUser.uid,
-					// each paragraphs get assigned different textareas and content
-					// by having index, content will be added in the right firebaseArray
-					content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
-					timestamp: firebase.database.ServerValue.TIMESTAMP
-				};
-				return obj;
+			var obj = {
+				user: mainCtrl.user,
+				userIpaddress : mainCtrl.userIpaddress,
+				faultyCount: 0,
+				userUid: mainCtrl.firebaseUser.uid,
+				// each paragraphs get assigned different textareas and content
+				// by having index, content will be added in the right firebaseArray
+				content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
+				timestamp: firebase.database.ServerValue.TIMESTAMP
+			};
+			return obj;
 		};
 
 		// push the translation to FirebaseArray and save the changes to the database for addTranslation method
 		mainCtrl.pushTransToFirebase = function (translationsRef, index) {
-				// translationsRef is a firebaseArray
- 				// if the HTTP request had succeeded to acquire user's IP address
-				if (mainCtrl.userIpaddress) {
-							// ex 123.123.123.123 -> 123123123123
-							mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
+			// translationsRef is a firebaseArray
+			// if the HTTP request had succeeded to acquire user's IP address
+			if (mainCtrl.userIpaddress) {
+				// ex 123.123.123.123 -> 123123123123
+				mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
 
-							// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
-							if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress] && !mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]){
-									// calling $add on a synchronized array is like Array.push(),
-									// except that it saves the changes to our database!
-									// add this translation to the array of translations(FirebaseArray) in this specific paragraph
-									translationsRef.$add(mainCtrl.createTransObj(index));
+				// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
+				if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress] && !mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]){
+					// calling $add on a synchronized array is like Array.push(),
+					// except that it saves the changes to our database!
+					// add this translation to the array of translations(FirebaseArray) in this specific paragraph
+					translationsRef.$add(mainCtrl.createTransObj(index));
 
-									// reset the message input
-									mainCtrl.content[index] = "";
+					// reset the message input
+					mainCtrl.content[index] = "";
 
-							}
-				} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
-							// but if Ipfinder isn't working, I will look up the uids that were also saved in bannedUsers
-							// so I can still keep these users from sabotaging
-
-							// add this translation to the array of translations(FirebaseArray) in this specific paragraph
-							translationsRef.$add(mainCtrl.createTransObj(index));
-
-							// reset the message input
-							mainCtrl.content[index] = "";
+				}
+			// but if HTTP request failed, I will look up the uids that were also saved in bannedUsers
+			// so I can still keep these users from sabotaging	
+			} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
 
 
-				} // end of else if
+				// add this translation to the array of translations(FirebaseArray) in this specific paragraph
+				translationsRef.$add(mainCtrl.createTransObj(index));
+
+				// reset the message input
+				mainCtrl.content[index] = "";
+
+
+			} // end of else if
 		};
 
 		// triggerd when clicking 'save' button to save the translation
@@ -228,26 +229,26 @@
 
 			// there should be some writing
 			if(mainCtrl.content[index]){
-					// if user logged in
-					if(mainCtrl.firebaseUser)	{
-						  // console.log(Object.values(mainCtrl.bannedUsers));
+				// if user logged in
+				if(mainCtrl.firebaseUser){
+					// console.log(Object.values(mainCtrl.bannedUsers));
 
-							// create or update the number of daily count that is assigned to each users
-							var currentDate = parseInt(new Date().yyyymmdd());
-							mainCtrl.updateDailyCount(currentDate, mainCtrl.content[index]);
+					// create or update the number of daily count that is assigned to each users
+					var currentDate = parseInt(new Date().yyyymmdd());
+					mainCtrl.updateDailyCount(currentDate, mainCtrl.content[index]);
 
-							// see if this user translated more than the number that is allowed per day
-							if (mainCtrl.users[mainCtrl.firebaseUser.uid].count >= 0) {
-									// mainCtrl.userIpaddress = "123.123.123.123";
-									mainCtrl.pushTransToFirebase(translationsRef, index);
+					// see if this user had translated more than numOfDailyCount
+					if (mainCtrl.users[mainCtrl.firebaseUser.uid].count >= 0) {
+							// mainCtrl.userIpaddress = "123.123.123.123";
+							mainCtrl.pushTransToFirebase(translationsRef, index);
 
-									/* end of if statement for count*/
-							}	else { $window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection"); }
+							/* end of if statement for count*/
+					} else { $window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection"); }
 
-							 /* end of if user logged in */
-				  } else {$window.alert("You need to log in!");}
+					 /* end of if user logged in */
+			  	} else {$window.alert("You need to log in!");}
 
-		   } else {$window.alert("you ain't write anything");}
+		   	} else {$window.alert("you ain't write anything");}
 
 		};
 
@@ -299,12 +300,12 @@
 			} // end of else
 
 
-		  // get the user's ipaddress from geoplugin.com https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only?page=1&tab=votes#tab-top
-	    $http.get('https://freegeoip.net/json/?callback=')
-	    .then(function(response) {
-	        mainCtrl.userIpaddress = response.data["ip"];
-	        // console.log(response.data["ip"]);
-	    }).catch(function(error){
+		        // get the user's ipaddress from geoplugin.com https://stackoverflow.com/questions/391979/how-to-get-clients-ip-address-using-javascript-only?page=1&tab=votes#tab-top
+			$http.get('https://freegeoip.net/json/?callback=')
+			.then(function(response) {
+				mainCtrl.userIpaddress = response.data["ip"];
+				// console.log(response.data["ip"]);
+			}).catch(function(error){
 				console.log("geoplugin is not working", error.message);
 			});
 		};
@@ -409,7 +410,7 @@
 
 
 	// it initializes controller.paragraphs, controller.numOfParagraphs, controller.userIpaddress
-  // controller.ArrayOfTranslations, controller.link, controller.theNumberOfEachTranslations
+        // controller.ArrayOfTranslations, controller.link, controller.theNumberOfEachTranslations
 	// controller.path
 	function setValuesForController(controller, service){
 		//set paragraphs and the number of paragraphs
@@ -465,9 +466,9 @@
 				// if(translations.length === 0){
 				// 	translations.$add({
 				// 		user: "admin",
-		    //   			content: "please translate :)",
-		    //   			timestamp: firebase.database.ServerValue.TIMESTAMP,
-		    //   			faultyCount: 0
+		                //   	  	content: "please translate :)",
+		                //   		timestamp: firebase.database.ServerValue.TIMESTAMP,
+		                //   		faultyCount: 0
 				// 	});
 				// }
 
