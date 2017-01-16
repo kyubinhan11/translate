@@ -170,12 +170,61 @@
 		// and upload the latest content(translation) in each textareas of each paragraphs
 		loadValuesFromFirebaseArrays(mainCtrl, mainCtrl.mainService);
 
+		/* PROTOTYPES */
 
+		// create an object of a translation for addTranslation method
+		mainCtrl.createTransObj = function (index) {
+				var obj = {
+					user: mainCtrl.user,
+					userIpaddress : mainCtrl.userIpaddress,
+					faultyCount: 0,
+					userUid: mainCtrl.firebaseUser.uid,
+					// each paragraphs get assigned different textareas and content
+					// by having index, content will be added in the right firebaseArray
+					content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
+					timestamp: firebase.database.ServerValue.TIMESTAMP
+				};
+				return obj;
+		};
+
+		// push the translation to FirebaseArray and save the changes to the database for addTranslation method
+		mainCtrl.pushTransToFirebase = function (translationsRef, index) {
+				// translationsRef is a firebaseArray
+ 				// if the HTTP request had succeeded to acquire user's IP address
+				if (mainCtrl.userIpaddress) {
+							// ex 123.123.123.123 -> 123123123123
+							mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
+
+							// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
+							if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress] && !mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]){
+									// calling $add on a synchronized array is like Array.push(),
+									// except that it saves the changes to our database!
+									// add this translation to the array of translations(FirebaseArray) in this specific paragraph
+									translationsRef.$add(mainCtrl.createTransObj(index));
+
+									// reset the message input
+									mainCtrl.content[index] = "";
+
+							}
+				} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
+							// but if Ipfinder isn't working, I will look up the uids that were also saved in bannedUsers
+							// so I can still keep these users from sabotaging
+
+							// add this translation to the array of translations(FirebaseArray) in this specific paragraph
+							translationsRef.$add(mainCtrl.createTransObj(index));
+
+							// reset the message input
+							mainCtrl.content[index] = "";
+
+
+				} // end of else if
+		};
 
 		// triggerd when clicking 'save' button to save the translation
 	  // add translations to firebase (triggered by the save button)
 		mainCtrl.addTranslation = function(translationsRef, index){
 			// console.log(mainCtrl.content[index]);
+			// mainCtrl.content[index] is what the user just translated 
 
 			// there should be some writing
 			if(mainCtrl.content[index]){
@@ -187,59 +236,18 @@
 							var currentDate = parseInt(new Date().yyyymmdd());
 							mainCtrl.updateDailyCount(currentDate, mainCtrl.content[index]);
 
+							// see if this user translated more than the number that is allowed per day
 							if (mainCtrl.users[mainCtrl.firebaseUser.uid].count >= 0) {
 									// mainCtrl.userIpaddress = "123.123.123.123";
-									// if our ip address finder works just fine
-									if (mainCtrl.userIpaddress) {
-												// ex 123.123.123.123 -> 123123123123
-												mainCtrl.userIpaddress = mainCtrl.userIpaddress.replace(/\./g, "");
-
-												// if this user's ipaddress is not in the bannedUsers object then translation can be added in database
-												if(!mainCtrl.bannedUsers[mainCtrl.userIpaddress] && !mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]){
-														// calling $add on a synchronized array is like Array.push(),
-														// except that it saves the changes to our database!
-														translationsRef.$add({
-															user: mainCtrl.user,
-															userIpaddress : mainCtrl.userIpaddress,
-															faultyCount: 0,
-															userUid: mainCtrl.firebaseUser.uid,
-															// each paragraphs get assigned different textareas and content
-															// by having index, content will be added in the right firebaseArray
-															content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
-															timestamp: firebase.database.ServerValue.TIMESTAMP
-														});
-
-														// reset the message input
-														mainCtrl.content[index] = "";
-
-												}
-								 	} else if (!mainCtrl.bannedUsers[mainCtrl.firebaseUser.uid]) {
-												// but if Ipfinder isn't working, I will look up the uids that were also saved in bannedUsers
-												// so I can still keep these users from sabotaging
-												translationsRef.$add({
-													user: mainCtrl.user,
-													userIpaddress : "stupid ipfinder is not working",
-													faultyCount: 0,
-													// each paragraphs get assigned different textareas and content
-													// by having index, content will be added in the right firebaseArray
-													userUid: mainCtrl.firebaseUser.uid,
-													content: mainCtrl.content[index].replace(/ /g,'&nbsp').replace(/\n/g, '<br>'),
-													timestamp: firebase.database.ServerValue.TIMESTAMP
-												});
-
-												// reset the message input
-												mainCtrl.content[index] = "";
-
-
-								 	} // end of else if
+									mainCtrl.pushTransToFirebase(translationsRef, index);
 
 									/* end of if statement for count*/
-							 }	else { $window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection"); }
+							}	else { $window.alert("Sorry! you can only translate " + (numOfDailyCount) + " times a day for protection"); }
 
 							 /* end of if user logged in */
-				    }  else{ $window.alert("You need to log in!"); }
+				  } else {$window.alert("You need to log in!");}
 
-		    } else{ $window.alert("you ain't write anything"); }
+		   } else {$window.alert("you ain't write anything");}
 
 		};
 
